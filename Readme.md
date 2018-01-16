@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Кузнецова Галина](https://up.htmlacademy.ru/adaptive/13/user/176463).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Горбачев.] (https://htmlacademy.ru/profile/hrbchv).
 
 ---
 
