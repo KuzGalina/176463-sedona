@@ -1,16 +1,16 @@
 "use strict";
 
 module.exports = function(grunt) {
-  grunt.loadNpmTasks("grunt-contrib-less");
   grunt.loadNpmTasks("grunt-browser-sync");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-postcss");
+  grunt.loadNpmTasks("grunt-sass");
 
   grunt.initConfig({
-    less: {
+    sass: {
       style: {
         files: {
-          "source/css/style.css": "source/less/style.less"
+          "source/css/style.css": "source/sass/style.scss"
         }
       }
     },
@@ -47,8 +47,8 @@ module.exports = function(grunt) {
 
     watch: {
       style: {
-        files: ["source/less/**/*.less"],
-        tasks: ["less", "postcss"]
+        files: ["source/sass/**/*.{scss,sass}"],
+        tasks: ["sass", "postcss"]
       }
     }
   });
