@@ -1,0 +1,16 @@
+.copyright {
+  outline: 2px solid red;
+  display: flex;
+  flex-direction: row;
+}
+
+.copyright__text {
+  outline: 2px solid orange;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.copyright__link {
+  outline: 2px solid blue;
+  display: block;
+}
