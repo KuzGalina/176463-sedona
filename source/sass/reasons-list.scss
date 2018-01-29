@@ -4,15 +4,13 @@
 
 .reasons-list__item {
   padding-top: 30px;
+
   &:last-child {
     padding-bottom: 30px;
   }
 }
 
-.reasons-list__item {
-  padding-top: 30px;
-}
-
-.reasons-list__item:last-child {
-  padding-bottom: 30px;
+.reasons-list__title {
+  @include font-title;
+  color: #000000;
 }
