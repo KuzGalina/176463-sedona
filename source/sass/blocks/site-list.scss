@@ -1,10 +1,8 @@
 .site-list {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
+  @include reset-list;
   background-color: $bg-blue;
-  list-style: none;
   outline: 2px solid red;
 }
 
@@ -13,7 +11,7 @@
     flex-direction: row;
   }
 
-  .site-list--right{
+  .site-list--right {
     order: 2;
   }
 
