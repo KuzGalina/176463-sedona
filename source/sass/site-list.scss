@@ -1,9 +1,25 @@
 .site-list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   background-color: $bg-blue;
   list-style: none;
   outline: 2px solid red;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+  }
+
+  .site-list--right{
+    order: 2;
+  }
+
+  .site-list--right .site-list__item {
+    padding-left: 90px;   //изменить!!!
+  }
 }
 
 .site-list__item {

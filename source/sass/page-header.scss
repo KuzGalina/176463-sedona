@@ -7,8 +7,9 @@
 }
 
 .page-header__logo {
-  display: block;
+//  position: absolute;
+  display: flex;
   width: 102px;
   height: 83px;
-  outline: 2px solid yellow;
+  outline: 2px solid orange;
 }
