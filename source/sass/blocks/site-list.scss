@@ -1,8 +1,11 @@
 .site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: $bg-blue;
   display: flex;
   flex-direction: column;
-  @include reset-list;
-  background-color: $bg-blue;
+  
   outline: 2px solid red;
 }
 
