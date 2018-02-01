@@ -1,0 +1,18 @@
+.form__item {
+  outline: 2px solid yellow;
+  padding: 22px 0;
+}
+
+.form__title {
+  @include font-title;
+  color: #000000;
+  font-weight: bold;
+}
+
+.input_wrapper {
+  text-align: left;
+}
+
+.form__label {
+  margin-right: 15px;
+}

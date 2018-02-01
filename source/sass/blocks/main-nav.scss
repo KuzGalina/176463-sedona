@@ -1,0 +1,17 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+}
