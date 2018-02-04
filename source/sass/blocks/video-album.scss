@@ -1,0 +1,22 @@
+.video-album {
+  outline: 2px solid yellow;
+  padding: 35px 0 75px 0;
+  text-align: center;
+}
+
+.video-album__header {
+  outline: 2px solid green;
+  padding: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .video-album__header {
+    padding: 68px 170px 75px 170px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-album__header {
+    padding: 68px 385px 75px 385px;
+  }
+}
