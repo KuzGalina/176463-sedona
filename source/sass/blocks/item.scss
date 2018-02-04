@@ -1,0 +1,31 @@
+.item {
+  outline: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 23px 0 23px 0;
+}
+
+.item__picture-wrapper {
+  outline: 2px solid orange;
+  margin: 0;
+  width: 100%;
+  min-height: 280px;
+}
+
+.item__name {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.item__author {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.item__likes {
+  font-weight: bold;
+}

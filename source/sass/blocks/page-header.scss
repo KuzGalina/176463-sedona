@@ -1,0 +1,14 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bg-white;
+  outline: 2px solid green;
+}
+
+.page-header__logo {
+  display: block;
+  width: 102px;
+  height: 83px;
+  outline: 2px solid yellow;
+}

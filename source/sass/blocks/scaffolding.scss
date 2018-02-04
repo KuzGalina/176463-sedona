@@ -1,0 +1,26 @@
+body {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", sans-serif;
+  color: #333333;
+  font-style: normal;
+  text-transform: uppercase;
+  background-color: $bg-white;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.button-page {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-decoration: none;
+}
