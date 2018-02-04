@@ -1,6 +1,7 @@
 .promo {
   outline: 2px solid red;
   background: $bg-white url("../img/bg-back-mobile.jpg") no-repeat 50% 0;
+<<<<<<< HEAD
   height: 390px;
 
   &--form {
@@ -16,4 +17,7 @@
       height: 162px;
     }
   }
+=======
+  min-height: 389px;
+>>>>>>> 0951f4e69c590e8f7361a7bc92cd193c99d87dd4
 }

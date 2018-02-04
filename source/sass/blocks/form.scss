@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .form {
   display: flex;
   flex-direction: column;
@@ -18,6 +19,17 @@
   color: #000000;
   font-weight: bold;
   align: center;
+=======
+.form__item {
+  outline: 2px solid yellow;
+  padding: 22px 0;
+}
+
+.form__title {
+  @include font-title;
+  color: #000000;
+  font-weight: bold;
+>>>>>>> 0951f4e69c590e8f7361a7bc92cd193c99d87dd4
 }
 
 .input_wrapper {
@@ -27,6 +39,7 @@
 .form__label {
   margin-right: 15px;
 }
+<<<<<<< HEAD
 
 .form__button {
   margin-top: 50px;
@@ -132,3 +145,5 @@
     padding: 14px 147px;
   }
 }
+=======
+>>>>>>> 0951f4e69c590e8f7361a7bc92cd193c99d87dd4

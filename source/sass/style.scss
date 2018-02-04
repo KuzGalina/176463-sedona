@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $bg-blue: #81b3d2;
 $bg-white: #ffffff;
 $bg-grey: #eeeeee;
@@ -303,3 +304,26 @@ body {
   padding: 35px 0 75px 0;
   text-align: center;
 }
+=======
+@import "blocks/variables.scss";
+@import "blocks/mixins.scss";
+@import "blocks/scaffolding.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/features.scss";
+@import "blocks/form.scss";
+@import "blocks/copyright.scss";
+@import "blocks/item.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-main.scss";
+@import "blocks/photo-main.scss";
+@import "blocks/preview.scss";
+@import "blocks/promo.scss";
+@import "blocks/reasons-list.scss";
+@import "blocks/review.scss";
+@import "blocks/reviews-main.scss";
+@import "blocks/search-form.scss";
+@import "blocks/social-list.scss";
+@import "blocks/video-album.scss";
+>>>>>>> 0951f4e69c590e8f7361a7bc92cd193c99d87dd4
