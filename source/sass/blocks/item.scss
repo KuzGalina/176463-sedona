@@ -2,16 +2,11 @@
   outline: 2px solid red;
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-=======
   flex-grow: 1;
->>>>>>> new-rebase
   align-items: flex-start;
   padding: 23px 0 23px 0;
 }
 
-<<<<<<< HEAD
-=======
 .item-wrap {
   display: flex;
   flex-direction: column;
@@ -20,7 +15,6 @@
   margin: 0 auto;
 }
 
->>>>>>> new-rebase
 .item__picture-wrapper {
   outline: 2px solid orange;
   margin: 0;
@@ -28,13 +22,10 @@
   min-height: 280px;
 }
 
-<<<<<<< HEAD
-=======
 .item__picture {
   width: 100%;
 }
 
->>>>>>> new-rebase
 .item__name {
   font-size: 14px;
   line-height: 24px;
@@ -51,8 +42,6 @@
 .item__likes {
   font-weight: bold;
 }
-<<<<<<< HEAD
-=======
 
 @media (min-width: $tablet-width) {
   .item {
@@ -83,4 +72,3 @@
     }
   }
 }
->>>>>>> new-rebase

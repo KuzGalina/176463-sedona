@@ -1,13 +1,5 @@
 .features {
   outline: 2px solid red;
-<<<<<<< HEAD
-  text-align: center;
-}
-
-.features__item {
-  outline: 2px solid yellow;
-  padding: 55px 30px 42px 30px;
-=======
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -24,7 +16,6 @@
   flex-direction: column;
   flex-grow: 2;
   padding: 55px 30px 45px 30px;
->>>>>>> new-rebase
   color: #ffffff;
   background-color: $bg-blue;
 }
@@ -33,10 +24,6 @@
   @include font-title;
 }
 
-<<<<<<< HEAD
-.features__image-wrapper {
-  min-height: 260px;
-=======
 .features__description {
   margin-bottom: 45px;
 }
@@ -53,7 +40,6 @@
 .features__image {
   width: 320px;
   height: 260px;
->>>>>>> new-rebase
 }
 
 .features__list {
@@ -62,8 +48,6 @@
   padding: 0;
   list-style: none;
 }
-<<<<<<< HEAD
-=======
 
 @media (min-width: $tablet-width) {
   .features-item {
@@ -99,4 +83,3 @@
     flex-grow: 3;
   }
 }
->>>>>>> new-rebase

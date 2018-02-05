@@ -1,40 +1,19 @@
-<<<<<<< HEAD
-.search-form {
-=======
 .search {
->>>>>>> new-rebase
   outline: 2px solid yellow;
   display: flex;
   flex-direction: column;
   align-items: center;
-<<<<<<< HEAD
-  padding-top: 30px;
-  text-align: center;
-}
-
-.search-form__title {
-=======
   padding: 30px 20px 50px 20px;
   text-align: center;
 }
 
 .search__title {
->>>>>>> new-rebase
   margin: 0;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
 }
 
-<<<<<<< HEAD
-.search-form__map {
-  outline: 2px solid red;
-  width: 100%;
-  min-height: 350px;
-  margin-top: 50px;
-  background: $bg-white url("/img/bg-map-mobile@1x.jpg") no-repeat 50% 0;
-}
-=======
 .search__intro {
   margin-bottom: 43px;
 }
@@ -71,4 +50,3 @@
     padding: 19px 134px 19px 134px;
   }
 }
->>>>>>> new-rebase

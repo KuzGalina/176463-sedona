@@ -1,19 +1,12 @@
-<<<<<<< HEAD
-.review {
-  padding: 54px 0 15px 0;
-=======
 .review__header {
   outline: 2px solid orange;
   padding: 55px 20px 25px 20px;
->>>>>>> new-rebase
   text-align: center;
 }
 
 .review__title {
   @include font-title;
 }
-<<<<<<< HEAD
-=======
 
 .review__intro {
   margin: 0;
@@ -31,4 +24,3 @@
     padding: 105px 375px 65px 375px;
   }
 }
->>>>>>> new-rebase

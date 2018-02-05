@@ -1,9 +1,5 @@
 .album {
   outline: 2px solid yellow;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> new-rebase
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,23 +12,10 @@
   padding: 40px 20px 35px 20px;
 }
 
-<<<<<<< HEAD
-=======
-  padding: 40px 0 32px 0;
-  text-align: center;
-}
-
->>>>>>> 0951f4e69c590e8f7361a7bc92cd193c99d87dd4
-=======
->>>>>>> new-rebase
 .album__title {
   @include font-title;
   color: #000000;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> new-rebase
 
 @media (min-width: $tablet-width) {
   .album {
@@ -50,8 +33,3 @@
     padding: 105px 380px 75px 380px;
   }
 }
-<<<<<<< HEAD
-=======
->>>>>>> 0951f4e69c590e8f7361a7bc92cd193c99d87dd4
-=======
->>>>>>> new-rebase

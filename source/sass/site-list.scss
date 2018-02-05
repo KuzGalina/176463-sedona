@@ -6,11 +6,6 @@
   outline: 2px solid red;
 }
 
-<<<<<<< HEAD
-.site-list__item {
-  text-align: center;
-  padding: 7px 0 7px 0;
-=======
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
@@ -41,7 +36,6 @@
   .site-list__item:last-child {
     margin-right: 0;
   }
->>>>>>> new-rebase
 }
 
 .site-list__link {
@@ -52,8 +46,6 @@
   color: #ffffff;
   font-weight: bold;
 }
-<<<<<<< HEAD
-=======
 
 @media (min-width: $tablet-width) {
   .site-list__link {
@@ -62,4 +54,3 @@
     color: #000000;
   }
 }
->>>>>>> new-rebase
