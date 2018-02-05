@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 60px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -19,11 +19,12 @@
   outline: 2px solid orange;
   margin: 0;
   width: 100%;
-  min-height: 280px;
+  height: 280px;
 }
 
 .item__picture {
-  width: 100%;
+  width: 280px;
+  height: 280px;
 }
 
 .item__name {

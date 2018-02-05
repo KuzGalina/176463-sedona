@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
@@ -11,15 +12,17 @@
   <header class="page-header">
     <nav class="main-nav">
       <button class="main-nav__toggle">Меню</button>
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__list site-list site-list--left">
         <li class="site-list__item">
-          <a class="site-list__link site-list__link" href="index.html">Главная</a>
+          <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link site-list__link--active">Фото и видео</a>
+          <a class="site-list__link" href="photo.html">Фото и видео</a>
         </li>
+      </ul>
+      <ul class="main-nav__list site-list site-list--right">
         <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Форма отзыва</a>
+          <a class="site-list__link site-list__link--active">Форма отзыва</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="#">HTML Academy</a>
@@ -36,11 +39,12 @@
       <img class="promo__text">
     </div>
     <section class="reviews-main__form review">
-      <div class="wrapper">
+      <div class="review__header">
         <h2 class="review__title ">Оставьте свой отзыв</h2>
         <p class="review__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами достопримечательностях</p>
+      </div>
         <form class="review__form form" action="#" >
-          <fieldset class="form__item">
+          <fieldset class="form__item form__item--name">
             <legend class="form__title ">Представьтесь:</legend>
             <div class="input_wrapper">
               <label for="name" class="form__label">Имя:</label>
@@ -55,7 +59,7 @@
               <input class="form__input form__input--patronymic" type="text" id="patronymic" placeholder="Александрович">
             </div>
           </fieldset>
-          <fieldset class="form__item">
+          <fieldset class="form__item form__item--contact">
             <legend class="form__title ">Контактная информация:</legend>
             <div class="input_wrapper">
               <label for="phone" class="form__label">Контактный телефон:</label>
@@ -66,7 +70,7 @@
               <input class="form_input form__input--email" type="email" id="email" placeholder="Введите e-mail">
             </div>
           </fieldset>
-          <fieldset class="form__item">
+          <fieldset class="form__item form__item--score">
             <legend class="form__title ">Ваше общее впечатление:</legend>
             <div class="input_wrapper">
               <label for="score2" class="form__label">Скорее положительное</label>
@@ -81,7 +85,7 @@
               <input class="form__input form__input--radio" type="radio" id="score1" name="score" value="1">
             </div>
           </fieldset>
-          <fieldset class="form__item">
+          <fieldset class="form__item form__item--showplace">
             <legend class="form__title ">Посещенные достопримечательности:</legend>
             <div class="input_wrapper">
               <label for="showplace1" class="form__label">Мост дьявола</label>
@@ -100,33 +104,30 @@
               <input class="form__input form__input--checkbox" type="checkbox" id="showplace4" name="showplace" value="4" checked>
             </div>
           </fieldset>
-          <fieldset class="form__item">
+          <fieldset class="form__item form__item--textarea">
             <legend class="form__title ">Опишите свои эмоции:</legend>
             <textarea class="form__input form__input--textarea" type="textarea">Опишите подробно все свои восторги</textarea>
           </fieldset>
           <input class="form__button button" type="submit" value="Отправить отзыв">
         </form>
-      </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="wrapper">
-      <p class="page-footer__hash">#Visitsedona</p>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в YouTube</a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+    <p class="page-footer__hash">#Visitsedona</p>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в YouTube</a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
 </body>

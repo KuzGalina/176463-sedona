@@ -8,6 +8,13 @@
   outline: 2px solid red;
 }
 
+.site-list__link {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  color:#ffffff;
+}
+
 @media (min-width: $tablet-width) {
   .site-list {
     flex-direction: row;
@@ -34,8 +41,8 @@
 .site-list__link {
   margin: 0 auto;
   text-decoration: none;
-  font-size: 18px;
-  line-height: 40px;
-  color: #ffffff;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
   font-weight: bold;
 }

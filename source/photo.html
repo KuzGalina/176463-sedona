@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
@@ -11,13 +12,15 @@
   <header class="page-header">
     <nav class="main-nav">
       <button class="main-nav__toggle">Меню</button>
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__list site-list site-list--left">
         <li class="site-list__item">
-          <a class="site-list__link site-list__link--active">Главная</a>
+          <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="photo.html">Фото и видео</a>
+          <a class="site-list__link site-list__link--active">Фото и видео</a>
         </li>
+      </ul>
+      <ul class="main-nav__list site-list site-list--right">
         <li class="site-list__item">
           <a class="site-list__link" href="form.html">Форма отзыва</a>
         </li>
@@ -36,17 +39,19 @@
       <img class="promo__text">
     </div>
     <section class="photo-main__album album">
-      <div class="wrapper">
+      <div class="album__header">
         <h2 class="album__title ">Фото и видео</h2>
         <p class="album__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике.</p>
-        <div class="album__item item">
+      </div>
+      <div class="item-wrap">
+        <div class="album__item item item--big">
           <figure class="item__picture-wrapper">
             <img class="item__picture" src="#" width="" height="" alt="Неродные просторы">
           </figure>
           <b class="item__name">Неродные просторы</b>
           <span class="item__author">Автор фото: Борис</span>
           <p class="item__likes">1350</p>
-        </div>
+      </div>
         <div class="album__item item">
           <figure class="item__picture-wrapper">
             <img class="item__picture" src="#" width="" height="" alt="Местная растительность">
@@ -84,23 +89,21 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="wrapper">
-      <p class="page-footer__hash">#Visitsedona</p>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в YouTube</a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+    <p class="page-footer__hash">#Visitsedona</p>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в YouTube</a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
 </body>
