@@ -25,17 +25,17 @@
     flex-direction: row;
   }
 
-  .site-list--right {
-    order: 2;
-  }
+    .site-list--right {
+      order: 2;
+    }
 
-  .site-list--right .site-list__item {
-    padding-left: 90px;
-  }
+    .site-list--right .site-list__item {
+      padding-left: 90px;
+    }
 
-  .site-list--left .site-list__item {
-    padding-right: 90px;
-  }
+    .site-list--left .site-list__item {
+      padding-right: 90px;
+    }
 
   .site-list__link {
     margin: 0 auto;

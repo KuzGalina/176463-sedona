@@ -1,7 +1,7 @@
 .advantages-list {
+  @include reset-list;
   display: flex;
   flex-direction: column;
-  @include reset-list;
   background-color: $bg-grey;
 }
 

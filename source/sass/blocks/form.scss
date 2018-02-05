@@ -13,8 +13,8 @@
 }
 
 .form__title {
-  display: flex;
   @include font-title;
+  display: flex;
   color: #000000;
   font-weight: bold;
   align: center;
