@@ -1,8 +1,34 @@
+<<<<<<< HEAD
 .review {
   padding: 54px 0 15px 0;
+=======
+.review__header {
+  outline: 2px solid orange;
+  padding: 55px 20px 25px 20px;
+>>>>>>> new-rebase
   text-align: center;
 }
 
 .review__title {
   @include font-title;
 }
+<<<<<<< HEAD
+=======
+
+.review__intro {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .review__header {
+    padding: 75px 160px 80px 160px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__header {
+    padding: 105px 375px 65px 375px;
+  }
+}
+>>>>>>> new-rebase

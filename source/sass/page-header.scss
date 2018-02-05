@@ -7,8 +7,15 @@
 }
 
 .page-header__logo {
+<<<<<<< HEAD
   display: block;
   width: 102px;
   height: 83px;
+=======
+  display: flex;
+  width: 102px;
+  height: 83px;
+  align-self: center;
+>>>>>>> new-rebase
   outline: 2px solid yellow;
 }

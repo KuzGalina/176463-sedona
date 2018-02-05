@@ -1,6 +1,30 @@
 .main-nav {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   width: 320px;
   margin: 0 auto;
 }
+=======
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 672px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: 1060px;
+    margin: 0 auto;
+  }
+}
+>>>>>>> new-rebase

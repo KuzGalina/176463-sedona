@@ -1,9 +1,14 @@
 body {
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 320px;
 =======
   min-width: 320px;
 >>>>>>> 0951f4e69c590e8f7361a7bc92cd193c99d87dd4
+=======
+  min-width: 320px;
+  max-width: 1280px;
+>>>>>>> new-rebase
   margin: 0 auto;
   padding: 0;
   font-size: 14px;
@@ -29,10 +34,20 @@ body {
   text-decoration: none;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> new-rebase
 
 img {
   max-width: 100%;
   height: auto;
 }
+<<<<<<< HEAD
 >>>>>>> 0951f4e69c590e8f7361a7bc92cd193c99d87dd4
+=======
+
+.visually-hidden {
+  display: none;
+}
+>>>>>>> new-rebase

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> new-rebase
 .advantages-list {
   display: flex;
   flex-direction: column;
@@ -10,16 +13,22 @@
   outline: 2px solid green;
   padding: 30px 35px 30px 35px;
   background-color: $bg-grey;
+<<<<<<< HEAD
 =======
 .advantages-list__item {
   padding: 30px;
 >>>>>>> 0951f4e69c590e8f7361a7bc92cd193c99d87dd4
+=======
+>>>>>>> new-rebase
 }
 
 .advantages-list__title {
   @include font-title;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> new-rebase
 
 @media (min-width: $tablet-width) {
   .advantages-list {
@@ -37,5 +46,8 @@
   width: 290px;
   padding: 48px 55px 70px 55px;
 }
+<<<<<<< HEAD
 =======
 >>>>>>> 0951f4e69c590e8f7361a7bc92cd193c99d87dd4
+=======
+>>>>>>> new-rebase

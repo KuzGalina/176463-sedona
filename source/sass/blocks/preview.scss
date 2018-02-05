@@ -7,3 +7,18 @@
 .preview__title {
   @include font-title;
 }
+<<<<<<< HEAD
+=======
+
+@media (min-width: $tablet-width) {
+  .preview {
+    padding: 50px 135px 50px 135px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .preview {
+    padding: 50px 350px 50px 55px;
+  }
+}
+>>>>>>> new-rebase
