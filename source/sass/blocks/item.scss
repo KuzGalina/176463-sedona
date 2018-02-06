@@ -2,15 +2,30 @@
   outline: 2px solid red;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   align-items: flex-start;
   padding: 23px 0 23px 0;
+}
+
+.item-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .item__picture-wrapper {
   outline: 2px solid orange;
   margin: 0;
   width: 100%;
-  min-height: 280px;
+  height: 280px;
+}
+
+.item__picture {
+  width: 280px;
+  height: 280px;
 }
 
 .item__name {
@@ -28,4 +43,34 @@
 
 .item__likes {
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .item {
+    width: 324px;
+
+    &--big {
+      width: 648px;
+    }
+  }
+
+  .item-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .item_picture {
+    width: 324px;
+    height: 267px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .item {
+    width: 400px;
+
+    &--big {
+      width: 1200px;
+    }
+  }
 }

@@ -8,34 +8,42 @@
   outline: 2px solid red;
 }
 
-@media (min-width: $tablet-width) {
-  .site-list {
-    flex-direction: row;
-  }
-
-  .site-list--right {
-    order: 2;
-  }
-
-  .site-list--right .site-list__item {
-    padding-left: 90px;   //изменить!!!
-  }
-
-  .site-list--left .site-list__item {
-    padding-right: 90px;   //изменить!!!
-  }
-}
-
 .site-list__item {
   text-align: center;
   padding: 7px 0 7px 0;
 }
 
 .site-list__link {
-  margin: 0 auto;
-  text-decoration: none;
   font-size: 18px;
   line-height: 40px;
-  color: #ffffff;
   font-weight: bold;
+  color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+    background-color: $bg-white;
+
+    &--right {
+      order: 2;
+    }
+  }
+
+  .site-list--right .site-list__item {
+    padding-left: 90px;
+  }
+
+  .site-list--left .site-list__item {
+    padding-right: 90px;
+  }
+
+  .site-list__link {
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: bold;
+  }
 }

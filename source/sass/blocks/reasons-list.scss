@@ -1,16 +1,38 @@
 .reasons-list {
-  background-color: $bg-grey;
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
 }
 
 .reasons-list__item {
-  padding-top: 30px;
-
-  &:last-child {
-    padding-bottom: 30px;
-  }
+  outline: 2px solid green;
+  padding: 45px 40px 0 65px;
+  text-align: left;
 }
 
 .reasons-list__title {
   @include font-title;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .reasons-list {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .reasons-list__item {
+    width: 158px;
+    padding: 160px 48px 64px 48px;
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reasons-list__item {
+    width: 260px;
+    padding: 165px 70px 85px 70px;
+  }
 }

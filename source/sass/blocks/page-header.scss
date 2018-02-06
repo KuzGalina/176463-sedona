@@ -1,7 +1,4 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: $bg-white;
   outline: 2px solid green;
 }
@@ -11,5 +8,5 @@
   width: 102px;
   height: 83px;
   align-self: center;
-  outline: 2px solid orange;
+  outline: 2px solid yellow;
 }

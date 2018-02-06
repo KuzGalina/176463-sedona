@@ -1,7 +1,33 @@
+.advantages-list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-grey;
+}
+
 .advantages-list__item {
-  padding: 30px;
+  outline: 2px solid green;
+  padding: 30px 35px 30px 35px;
+  background-color: $bg-grey;
 }
 
 .advantages-list__title {
   @include font-title;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-list {
+    flex-direction: row;
+  }
+
+  .advantages-list__item {
+    width: 162px;
+    padding: 48px 47px 50px 47px;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  width: 290px;
+  padding: 48px 55px 70px 55px;
 }
