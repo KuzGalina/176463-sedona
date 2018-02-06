@@ -23,6 +23,7 @@
 @media (min-width: $tablet-width) {
   .site-list {
     flex-direction: row;
+    background-color: $bg-white;
 
     &--right {
       order: 2;

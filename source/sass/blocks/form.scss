@@ -43,6 +43,7 @@
 
 @media (min-width: $tablet-width) {
   .form {
+    padding: 0 60px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -53,14 +54,12 @@
 
     &--score {
       width: 264px;
-      padding: 0 60px 0 60px;
       flex-direction: column;
       order: 1;
     }
 
     &--name {
       width: 264px;
-      padding: 42px 60px 70px 60px;
       order: 2;
     }
 
