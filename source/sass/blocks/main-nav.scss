@@ -1,9 +1,7 @@
 .main-nav {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
   width: 100%;
-  margin: 0 auto;
 }
 
 .main-nav__toggle {
@@ -15,14 +13,5 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 710px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav {
-    width: 1060px;
-    margin: 0 auto;
   }
 }
