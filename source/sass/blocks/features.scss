@@ -18,7 +18,7 @@
   color: #ffffff;
 }
 
- .features-item__title {
+.features-item__title {
   @include font-title;
 }
 
@@ -30,10 +30,6 @@
   padding: 55px 30px 45px 30px;
   color: #ffffff;
   background-color: $bg-blue;
-}
-
-.features__title {
-  @include font-title;
 }
 
 .features__description {
