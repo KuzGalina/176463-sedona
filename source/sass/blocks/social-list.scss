@@ -3,11 +3,13 @@
   outline: 2px solid yellow;
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
   margin-bottom: 45px;
 }
 
 .social-list__item {
   outline: 2px solid red;
+  position: relative;
   display: flex;
   margin-right: 7px;
   width: 47px;
@@ -17,7 +19,37 @@
   &:last-child {
     margin-right: 0;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 27px;
+    height: 27px;
+  }
+
+  &--twitter::before {
+    top:10px;
+    left: 10px;
+    background: transparent url("../img/icon-twitter.svg") no-repeat;
+  }
+
+  &--facebook::before {
+    top:10px;
+    left: 15px;
+    background: transparent url("../img/icon-facebook.svg") no-repeat;
+  }
+
+  &--youtube::before {
+    top:15px;
+    left: 8px;
+    background: transparent url("../img/icon-youtube.svg") no-repeat;
+  }
 }
+
+
 
 .social__link {
   font-size: 0;

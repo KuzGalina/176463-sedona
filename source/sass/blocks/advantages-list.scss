@@ -7,8 +7,9 @@
 
 .advantages-list__item {
   outline: 2px solid green;
-  padding: 30px 35px 30px 35px;
+  padding: 30px 35px 10px 35px;
   background-color: $bg-grey;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .advantages-list__title {
@@ -22,12 +23,22 @@
 
   .advantages-list__item {
     width: 162px;
-    padding: 48px 47px 50px 47px;
+    padding: 48px 48px 20px 48px;
     flex-grow: 1;
+  }
+
+  .advantages-list__title {
+    @include font-title-tablet;
   }
 }
 
 @media (min-width: $desktop-width) {
-  width: 290px;
-  padding: 48px 55px 70px 55px;
+  .advantages-list__item {
+  width: 288px;
+  padding: 48px 56px 50px 56px;
+  }
+
+  .advantages-list__title {
+    margin-bottom: 20px;
+  }
 }

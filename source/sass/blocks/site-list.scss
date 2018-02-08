@@ -10,19 +10,39 @@
 
 .site-list__item {
   text-align: center;
-  padding: 7px 0 7px 0;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+
 }
 
 .site-list__link {
+  padding: 7px 0;
+  display: block;
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
   color: #ffffff;
+  text-decoration: none;
+}
+
+.site-list__link[href] {
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 280px;
     background-color: $bg-white;
 
     &--right {
@@ -30,20 +50,53 @@
     }
   }
 
-  .site-list--right .site-list__item {
-    padding-left: 90px;
-  }
+  .site-list__item {
 
-  .site-list--left .site-list__item {
-    padding-right: 90px;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+
   }
 
   .site-list__link {
     margin: 0 auto;
     text-decoration: none;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 40px;
     color: #000000;
     font-weight: bold;
+
+}
+
+  .site-list__link[href] {
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: #89b8d5;
+  }
+    &:active {
+      color: #b2b2b2;
+    }
+  }
+
+  .site-list__link--active {
+    color: #9b8d84;
+    cursor:pointer;
+
+    &:hover,
+    &:focus {
+      color: #604e43;
+
+    &:active {
+      color: #d6d0cc;
+    }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 320px;
   }
 }

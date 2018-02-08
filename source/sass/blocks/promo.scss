@@ -1,19 +1,59 @@
 .promo {
+  position: relative;
   outline: 2px solid red;
-  background: $bg-white url("../img/bg-back-mobile.jpg") no-repeat 50% 0;
+
   height: 390px;
+
+  background: $bg-white url("../img/bg-back-mobile@1x.jpg") no-repeat center 0;
+
 
   &--form {
     height: 160px;
   }
 }
 
+.promo::before {
+  position: absolute;
+  content: "";
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+  height: 27px;
+
+  background: transparent url("../img/bg-intro-triangle-mobile.svg") no-repeat center 0;
+}
+
+.promo__text {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  left: 0;
+
+  width: 280px;
+  height: 225px;
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .promo {
     height: 520px;
+    background-size: cover;
 
     &--form {
       height: 162px;
     }
+  }
+
+  .promo__text {
+    top: 75px;
+    right: 0;
+    left: 0;
+
+    width: 470px;
+    height: 356px;
+    margin: 0 auto;
   }
 }
