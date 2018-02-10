@@ -1,0 +1,20 @@
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+.description__item {
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .description {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .description__item {
+    display: flex;
+    flex-direction: column;
+  }
+}

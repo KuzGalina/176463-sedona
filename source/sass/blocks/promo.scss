@@ -1,18 +1,19 @@
 .promo {
   position: relative;
   outline: 2px solid red;
-
   height: 390px;
-
   background: $bg-white url("../img/bg-back-mobile@1x.jpg") no-repeat center 0;
-
-
-  &--form {
-    height: 160px;
-  }
 }
 
-.promo::before {
+.promo--small {
+  position: relative;
+  outline: 2px solid red;
+  height: 158px;
+  background: $bg-white url("../img/bg-back-mobile@1x.jpg") no-repeat center -50px;
+}
+
+.promo::before,
+.promo--small::before {
   position: absolute;
   content: "";
 
@@ -27,13 +28,24 @@
 }
 
 .promo__text {
+  outline: 2px solid yellow;
   position: absolute;
   top: 90px;
   right: 0;
   left: 0;
-
   width: 280px;
   height: 225px;
+  margin: 0 auto;
+}
+
+.promo__text--small {
+  outline: 2px solid yellow;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  left: 0;
+  width: 240px;
+  height: 55px;
   margin: 0 auto;
 }
 
@@ -47,13 +59,32 @@
     }
   }
 
+  .promo--small {
+    height: 290px;
+    background-size: cover;
+  }
+
   .promo__text {
     top: 75px;
     right: 0;
     left: 0;
-
     width: 470px;
     height: 356px;
     margin: 0 auto;
+  }
+
+  .promo__text--small {
+    top: 75px;
+    right: 0;
+    left: 0;
+    width: 466px;
+    height: 107px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo--small {
+    height: 305 px;
   }
 }

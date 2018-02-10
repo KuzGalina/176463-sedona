@@ -2,7 +2,6 @@
   outline: 2px solid red;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   align-items: flex-start;
   padding: 23px 0 23px 0;
 }
@@ -72,5 +71,10 @@
     &--big {
       width: 1200px;
     }
+
+  .item_picture {
+    width: 400px;
+    height: 267px;
   }
+}
 }
