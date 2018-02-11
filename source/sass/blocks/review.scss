@@ -1,26 +1,31 @@
 .review__header {
   outline: 2px solid orange;
-  padding: 55px 20px 25px 20px;
+  padding: 35px 20px 15px 20px;
   text-align: center;
 }
 
 .review__title {
   @include font-title;
+  margin-bottom: 25px;
 }
 
 .review__intro {
   margin: 0;
-  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
   .review__header {
-    padding: 75px 160px 80px 160px;
+    padding: 75px 160px 55px 160px;
+  }
+
+  .review__title {
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .review__header {
-    padding: 105px 375px 65px 375px;
+    padding: 125px 375px 40px 375px;
   }
 }

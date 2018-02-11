@@ -10,6 +10,17 @@
   flex-direction: column;
 }
 
+.features-item__card {
+  position: relative;
+  padding: 38px 20px 20px 20px;
+  background-color: $bg-blue;
+  color: #ffffff;
+}
+
+.features-item__title {
+  @include font-title;
+}
+
 .features-item__header {
   outline: 2px solid yellow;
   display: flex;
@@ -18,10 +29,6 @@
   padding: 55px 30px 45px 30px;
   color: #ffffff;
   background-color: $bg-blue;
-}
-
-.features__title {
-  @include font-title;
 }
 
 .features__description {
@@ -49,6 +56,23 @@
   list-style: none;
 }
 
+@media (max-width: $mobile-width-only) {
+  .features-item__card--triangle {
+    padding: 68px 20px 25px 20px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 45px;
+      background: transparent url("../img/bg-triangle.svg") no-repeat center 0;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .features-item {
     display: flex;
@@ -59,27 +83,54 @@
     }
   }
 
+  .features-item__card {
+    width: 216px;
+    padding-top: 45px;
+  }
+
   .features-item__header {
     width: 170px;
     padding: 48px 45px 50px 45px;
     flex-grow: 1;
   }
 
+  .features-item__title {
+    @include font-title-tablet;
+    margin-bottom: 15px;
+  }
+
   .features__image-wrapper {
-    width: 508px;
+    width: 512px;
+    height: 256px;
     flex-grow: 3;
+  }
+
+  .features__image {
+    width: 512px;
+    height: 256px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .features-item__header {
     width: 270px;
-    padding: 55px 65px 60px 65px;
+    padding: 55px 65px 45px 65px;
     flex-grow: 1;
   }
 
+  .features-item__card {
+    padding: 45px 95px 29px 95px;
+    width: 210px;
+  }
+
   .features__image-wrapper {
-    width: 880px;
+    width: 800px;
+    height: 258px;
     flex-grow: 3;
+  }
+
+  .features__image {
+    width: 800px;
+    height: 258px;
   }
 }

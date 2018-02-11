@@ -6,6 +6,7 @@
 
 .copyright__text {
   outline: 2px solid orange;
+  margin: 0;
   margin-right: 10px;
   color: #000000;
 }
@@ -13,4 +14,8 @@
 .copyright__link {
   outline: 2px solid blue;
   display: block;
+  width: 30px;
+  height: 36px;
+  background: transparent url("../img/logo-htmlacademy.svg") no-repeat;
+  background-size: contain;
 }

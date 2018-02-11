@@ -7,7 +7,7 @@
 
 .advantages-list__item {
   outline: 2px solid green;
-  padding: 30px 35px 30px 35px;
+  padding: 25px 35px 10px 35px;
   background-color: $bg-grey;
 }
 
@@ -28,6 +28,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  width: 290px;
-  padding: 48px 55px 70px 55px;
+  .advantages-list__item {
+    width: 290px;
+    padding: 48px 55px 70px 55px;
+  }
 }
