@@ -3,7 +3,6 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Страница отзывов</title>
 </head>
@@ -44,7 +43,7 @@
           <p class="review__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами достопримечательностях</p>
         </div>
           <form class="review__form form" action="#">
-            <fieldset class="form__item form__item--name">
+            <section class="form__item form__item--name">
               <h3 class="form__title">Представьтесь:</h3>
               <div class="form__wrapper">
                 <label for="name" class="form__label">Имя:</label>
@@ -58,20 +57,22 @@
                 <label for="patronymic" class="form__label">Отчество:</label>
                 <input class="form__input form__input--patronymic" type="text" id="patronymic" placeholder="Александрович">
               </div>
-            </fieldset>
-            <fieldset class="form__item form__item--contact">
-              <legend class="form__title">Контактная информация:</legend>
+            </section>
+            <section class="form__item form__item--contact">
+              <h3 class="form__title">Контактная информация:</h3>
+              <div class="form__container--contact">
               <div class="form__wrapper">
                 <label for="phone" class="form__label">Контактный телефон:</label>
-                <input class="form__input form__input--phone" type="text" id="phone" placeholder="Введите телефон">
+                <input class="form__input form__input--phone form__icon--phone" type="text" id="phone" placeholder="Введите телефон">
               </div>
               <div class="form__wrapper">
                 <label for="email" class="form__label">Электронная почта:</label>
                 <input class="form__input form__input--email" type="email" id="email" placeholder="Введите e-mail">
               </div>
-            </fieldset>
-            <fieldset class="form__item form__item--score">
-              <legend class="form__title">Ваше общее впечатление:</legend>
+            </div>
+            </section>
+            <section class="form__item form__item--score">
+              <h3 class="form__title">Ваше общее впечатление:</h3>
               <div class="form__wrapper">
                 <label for="score2" class="form__label">Скорее положительное</label>
                 <input class="form__input form__input--radio" type="radio" id="score2" name="score" value="2" checked>
@@ -87,9 +88,10 @@
                 <input class="form__input form__input--radio" type="radio" id="score1" name="score" value="1">
                 <span class="form-indicator"></span>
               </div>
-            </fieldset>
-            <fieldset class="form__item form__item--showplace">
-              <legend class="form__title">Посещенные достопримечательности:</legend>
+            </section>
+            <section class="form__item form__item--showplace">
+              <h3 class="form__title">Посещенные достопримечательности:</h3>
+              <div class="form__container--showplace">
               <div class="form__wrapper">
                 <label for="showplace1" class="form__label">Мост дьявола</label>
                 <input class="form__input form__input--checkbox" type="checkbox" id="showplace1" name="showplace" value="1" checked>
@@ -110,11 +112,12 @@
                 <input class="form__input form__input--checkbox" type="checkbox" id="showplace4" name="showplace" value="4" checked>
                 <span class="checkbox-indicator"></span>
               </div>
-            </fieldset>
-            <fieldset class="form__item form__item--textarea">
-              <h3 class="form__title"  >Опишите свои эмоции:</h3>
+            </div>
+            </section>
+            <section class="form__item form__item--textarea">
+              <h3 class="form__title">Опишите свои эмоции:</h3>
               <textarea class="form__input form__input--textarea" type="textarea">Опишите подробно все свои восторги</textarea>
-            </fieldset>
+            </section>
             <input class="form__button button" type="submit" value="Отправить отзыв">
           </form>
       </section>

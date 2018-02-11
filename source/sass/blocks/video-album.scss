@@ -1,12 +1,21 @@
 .video-album {
   outline: 2px solid yellow;
-  padding-bottom: 75px;
+  padding-bottom: 115px;
   text-align: center;
 }
 
 .video-album__header {
   outline: 2px solid green;
-  padding: 15px 0 55px 0;
+  padding: 35px 0 25px 0;
+}
+
+.video__player {
+  position: relative;
+  width: 280px;
+  height: 110px;
+  background-color: grey;
+  margin: -50px auto;
+  z-index: 3;
 }
 
 .video-album__title {
@@ -14,17 +23,53 @@
 }
 
 .video-album__video {
-//  margin-top: 15px;
+  outline: 2px solid orange;
+  background-size: cover;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .video-album__header {
-    padding: 68px 170px 75px 170px;
+    padding: 28px 170px 75px 170px;
+  }
+
+  .video-album__title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  .video-album__video {
+    width: 648px;
+    height: 500px;
+  }
+
+  .video__player {
+    position: relative;
+    width: 648px;
+    height: 93px;
+    margin: -90px auto;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .video-album {
+    padding-bottom: 180px;
+  }
+
   .video-album__header {
-    padding: 68px 385px 75px 385px;
+    padding: 35px 385px 60px 385px;
+  }
+
+  .video-album__video {
+  width: 800px;
+  height: 500px;
+  }
+
+  .video__player {
+  position: relative;
+  width: 800px;
+  height: 93px;
+  margin: -90px auto;
   }
 }

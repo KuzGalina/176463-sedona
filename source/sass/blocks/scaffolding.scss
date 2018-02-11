@@ -1,15 +1,15 @@
 @font-face {
   font-weight: normal;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
-  src: url("fonts/ptsans.woff2") format("woff2"), url("fonts/ptsans.woff") format("woff");
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
   font-weight: bold;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
-  src: url("fonts/ptsansbold.woff2") format("woff2"), url("fonts/ptsansbold.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("fonts/ptsansbold.woff") format("woff");
 }
 
 body {
@@ -17,7 +17,7 @@ body {
   padding: 0;
   font-size: 14px;
   line-height: 26px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #333333;
   font-style: normal;
   text-transform: uppercase;
@@ -28,6 +28,17 @@ body {
   outline: 5px solid pink;
   width: 320px;
   margin: 0 auto;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+input, label {
+  box-sizing: border-box;
 }
 
 .visually-hidden:not(:focus):not(:active) {

@@ -2,13 +2,13 @@
   @include reset-list;
   display: flex;
   flex-direction: column;
-  padding: 35px 0 10px 0;
+  padding: 35px 0 25px 0;
 }
 
 .reasons-list__item {
   position: relative;
   outline: 2px solid green;
-  padding: 0 40px 0 70px;
+  padding: 5px 40px 0 70px;
   text-align: left;
 
   &::after {
@@ -38,6 +38,9 @@
   }
 }
 
+.reasons-list__description {
+  margin-bottom: 5px;
+}
 
 .reasons-list__title {
   @include font-title;

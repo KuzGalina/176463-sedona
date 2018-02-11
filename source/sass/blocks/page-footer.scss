@@ -22,3 +22,11 @@
     padding: 25px 65px 35px 65px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 42px 35px 120px;
+  }
+}

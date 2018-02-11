@@ -1,35 +1,35 @@
-.album {
-  outline: 2px solid yellow;
+.advantages-list {
+  @include reset-list;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 40px 0 32px 0;
-  text-align: center;
+  background-color: $bg-grey;
 }
 
-.album__header {
+.advantages-list__item {
   outline: 2px solid green;
-  padding: 40px 20px 35px 20px;
+  padding: 25px 35px 10px 35px;
+  background-color: $bg-grey;
 }
 
-.album__title {
+.advantages-list__title {
   @include font-title;
-  color: #000000;
 }
 
 @media (min-width: $tablet-width) {
-  .album {
-    padding: 40px 0 32px 0;
+  .advantages-list {
+    flex-direction: row;
   }
 
-  .album__header {
-    width: 438px;
-    padding: 70px 165px 72px 165px;
+  .advantages-list__item {
+    width: 162px;
+    padding: 48px 47px 50px 47px;
+    flex-grow: 1;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .album__header {
-    padding: 105px 380px 75px 380px;
+  .advantages-list__item {
+    width: 290px;
+    padding: 48px 55px 70px 55px;
   }
 }

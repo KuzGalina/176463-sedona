@@ -9,21 +9,18 @@
   position: relative;
   outline: 2px solid red;
   height: 158px;
-  background: $bg-white url("../img/bg-back-mobile@1x.jpg") no-repeat center -50px;
+  background: $bg-white url("../img/bg-back-mobile@1x.jpg") no-repeat center -95px;
 }
 
 .promo::before,
 .promo--small::before {
   position: absolute;
   content: "";
-
   bottom: 0;
   left: 0;
   right: 0;
-
   width: 100%;
   height: 27px;
-
   background: transparent url("../img/bg-intro-triangle-mobile.svg") no-repeat center 0;
 }
 
@@ -85,6 +82,6 @@
 
 @media (min-width: $desktop-width) {
   .promo--small {
-    height: 305 px;
+    height: 305px;
   }
 }
