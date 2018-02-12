@@ -51,11 +51,11 @@
   }
 
   .search__map {
-  background: $bg-white url("../img/bg-map-tablet@1x.jpg") no-repeat center 0;
-  background-size: 768px auto;
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-map-tablet@2x.jpg");
-  }
+    background: $bg-white url("../img/bg-map-tablet@1x.jpg") no-repeat center 0;
+    background-size: 768px auto;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
   }
 }
 
@@ -73,10 +73,10 @@
   }
 
   .search__map {
-  background: $bg-white url("../img/bg-map-desktop@1x.jpg") no-repeat center 0;
-  background-size: 1200px auto;
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-map-desktop@2x.jpg");
+    background: $bg-white url("../img/bg-map-desktop@1x.jpg") no-repeat center 0;
+    background-size: 1200px auto;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
   }
-}
 }
