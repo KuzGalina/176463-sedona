@@ -29,7 +29,11 @@
             </li>
           </ul>
           <a class="page-header__logo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
             <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+            <picture>
           </a>
       </nav>
     </header>
@@ -50,7 +54,11 @@
             <p class="features-item__description description-style">Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="features__image-wrapper">
-            <img class="features__image--town" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фотография города">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg">
+            <img class="features__image--town" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg" alt="Фотография города">
+            <picture>
           </div>
         </div>
         <ul class="features__list reasons-list">
@@ -74,7 +82,11 @@
             <p class="features-item__description description-style">Да, по нему можно пройти! Если Вы осмелитесь, конечно</p>
           </div>
           <div class="features__image-wrapper">
-            <img class="features__image--town" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фотография города">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg">
+            <img class="features__image--bridge" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg" alt="Фотография моста">
+          </picture>
           </div>
         </div>
         <ul class="features__list advantages-list">
@@ -122,6 +134,9 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
       </div>
     </footer>
+
+    <section class="modal">
+
   </div>
   <script src="js/scripts.js"></script>
 </body>
