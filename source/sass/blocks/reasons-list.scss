@@ -8,12 +8,10 @@
 
 .reasons-list__item {
   position: relative;
-  outline: 2px solid green;
   padding: 5px 40px 0 70px;
   text-align: left;
 
   &::after {
-    outline: 1px solid orange;
     content: "";
     position: absolute;
     top: 0;

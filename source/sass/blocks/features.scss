@@ -1,5 +1,4 @@
 .features {
-  outline: 2px solid red;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -22,7 +21,6 @@
 }
 
 .features-item__header {
-  outline: 2px solid yellow;
   display: flex;
   flex-direction: column;
   flex-grow: 2;
@@ -36,7 +34,6 @@
 }
 
 .features__image-wrapper {
-  outline: 2px solid red;
   display: flex;
   align-self: center;
   flex-grow: 3;
@@ -50,7 +47,6 @@
 }
 
 .features__list {
-  outline: 2px solid yellow;
   margin: 0;
   padding: 0;
   list-style: none;
