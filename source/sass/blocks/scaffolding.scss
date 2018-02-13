@@ -25,7 +25,6 @@ body {
 }
 
 .container {
-  outline: 5px solid pink;
   width: 320px;
   margin: 0 auto;
 }
@@ -35,10 +34,6 @@ textarea,
 select,
 button {
   font-family: "PT Sans", "Arial", sans-serif;
-}
-
-input, label {
-  box-sizing: border-box;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -64,6 +59,22 @@ input, label {
   color: #ffffff;
   background-color: #81b3d2;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-page:hover,
+.button-page:focus {
+  background-color: #669ec0;
+}
+
+.button-page:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
+.button-page:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 img {

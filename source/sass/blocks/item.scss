@@ -1,5 +1,4 @@
 .item {
-  outline: 2px solid red;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -16,7 +15,6 @@
 }
 
 .item__picture-wrapper {
-  outline: 2px solid orange;
   margin: 0;
   width: 100%;
   height: 280px;
@@ -103,12 +101,12 @@
     &--big {
       width: 1200px;
     }
+  }
 
   .item_picture {
     width: 400px;
     height: 267px;
   }
-}
 
   .item-wrap {
     padding: 0;

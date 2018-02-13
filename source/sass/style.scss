@@ -1,3 +1,4 @@
+@import "normalize.scss";
 @import "blocks/variables.scss";
 @import "blocks/mixins.scss";
 @import "blocks/scaffolding.scss";
@@ -10,15 +11,14 @@
 @import "blocks/item.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-main.scss";
-@import "blocks/photo-main.scss";
 @import "blocks/preview.scss";
 @import "blocks/promo.scss";
 @import "blocks/reasons-list.scss";
 @import "blocks/review.scss";
-@import "blocks/reviews-main.scss";
 @import "blocks/search-form.scss";
 @import "blocks/social-list.scss";
 @import "blocks/video-album.scss";
 @import "blocks/advantages-list.scss";
 @import "blocks/map.scss";
 @import "blocks/album.scss";
+@import "blocks/description.scss";

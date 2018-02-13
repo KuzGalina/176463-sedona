@@ -1,6 +1,5 @@
 .social-list {
   @include reset-list;
-  outline: 2px solid yellow;
   display: flex;
   flex-direction: row;
   margin-top: 10px;
@@ -8,13 +7,22 @@
 }
 
 .social-list__item {
-  outline: 2px solid red;
   position: relative;
   display: flex;
   margin-right: 7px;
   width: 47px;
   height: 47px;
   background-color: $bg-blue;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -34,6 +42,7 @@
     top: 10px;
     left: 10px;
     background: transparent url("../img/icon-twitter.svg") no-repeat;
+    fill: #ffffff;
   }
 
   &--facebook::before {

@@ -20,21 +20,25 @@
             </li>
           </ul>
           <ul class="main-nav__list site-list site-list--right">
-            <li class="site-list__item site-list__link--active">
-              <a class="site-list__link">Форма отзыва</a>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Форма отзыва</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
-          <a class="page-header__logo">
+          <a class="page-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
             <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+            <picture>
           </a>
       </nav>
     </header>
     <main class="reviews-main">
       <h1 class="visually-hidden">Sedona</h1>
-      <div class="reviews-main__promo promo--small">
+      <div class="reviews-main__promo promo promo--small">
         <img class="promo__text--small" src="img/text-sedona.svg" width="240" height="555" alt="Sedona">
       </div>
       <section class="reviews-main__form review">
@@ -62,7 +66,7 @@
               <h3 class="form__title">Контактная информация:</h3>
               <div class="form__container--contact">
               <div class="form__wrapper">
-                <label for="phone" class="form__label">Контактный телефон:</label>
+                <label for="phone" class="form__label"><span class="form__label--visually-hidden">Контактный</span> телефон:</label>
                 <input class="form__input form__input--phone form__icon--phone" type="text" id="phone" placeholder="Введите телефон">
               </div>
               <div class="form__wrapper">
@@ -74,43 +78,57 @@
             <section class="form__item form__item--score">
               <h3 class="form__title">Ваше общее впечатление:</h3>
               <div class="form__wrapper">
-                <label for="score2" class="form__label">Скорее положительное</label>
+                <label for="score2" class="form__label">
                 <input class="form__input form__input--radio" type="radio" id="score2" name="score" value="2" checked>
-                <span class="form-indicator"></span>
+                Скорее положительное
+                <span class="form__indicator"></span>
+                </label>
               </div>
               <div class="form__wrapper">
-                <label for="score0" class="form__label">Скорее отрицательное</label>
+                <label for="score0" class="form__label">
                 <input class="form__input form__input--radio" type="radio" id="score0" name="score" value="0">
-                <span class="form-indicator"></span>
+                Скорее отрицательное
+                <span class="form__indicator"></span>
+                </label>
               </div>
               <div class="form__wrapper">
-                <label for="score1" class="form__label">Затрудняюсь ответить</label>
+                <label for="score1" class="form__label">
                 <input class="form__input form__input--radio" type="radio" id="score1" name="score" value="1">
-                <span class="form-indicator"></span>
+                Затрудняюсь ответить
+                <span class="form__indicator"></span>
+                </label>
               </div>
             </section>
             <section class="form__item form__item--showplace">
               <h3 class="form__title">Посещенные достопримечательности:</h3>
               <div class="form__container--showplace">
               <div class="form__wrapper">
-                <label for="showplace1" class="form__label">Мост дьявола</label>
+                <label for="showplace1" class="form__label">
                 <input class="form__input form__input--checkbox" type="checkbox" id="showplace1" name="showplace" value="1" checked>
-                <span class="checkbox-indicator"></span>
+                Мост дьявола
+                <span class="form__checkbox-indicator"></span>
+                </label>
               </div>
               <div class="form__wrapper">
-                <label for="showplace2" class="form__label">Слайд-парк</label>
+                <label for="showplace2" class="form__label">
                 <input class="form__input form__input--checkbox" type="checkbox" id="showplace2" name="showplace" value="2" checked>
-                <span class="checkbox-indicator"></span>
+                Слайд-парк
+                <span class="form__checkbox-indicator"></span>
+                </label>
               </div>
               <div class="form__wrapper">
-                <label for="showplace3" class="form__label">Гора-Колокол</label>
+                <label for="showplace3" class="form__label">
                 <input class="form__input form__input--checkbox" type="checkbox" id="showplace3" name="showplace" value="3" checked>
-                <span class="checkbox-indicator"></span>
+                Гора-Колокол
+                <span class="form__checkbox-indicator"></span>
+                </label>
               </div>
               <div class="form__wrapper">
-                <label for="showplace4" class="form__label">Красные скалы</label>
+                <label for="showplace4" class="form__label">
                 <input class="form__input form__input--checkbox" type="checkbox" id="showplace4" name="showplace" value="4" checked>
-                <span class="checkbox-indicator"></span>
+                Красные скалы
+                <span class="form__checkbox-indicator"></span>
+                </label>
               </div>
             </div>
             </section>
@@ -118,7 +136,7 @@
               <h3 class="form__title">Опишите свои эмоции:</h3>
               <textarea class="form__input form__input--textarea" type="textarea">Опишите подробно все свои восторги</textarea>
             </section>
-            <input class="form__button button" type="submit" value="Отправить отзыв">
+            <input class="form__button button-page" type="submit" value="Отправить отзыв">
           </form>
       </section>
     </main>
@@ -141,5 +159,6 @@
       </div>
     </footer>
   </div>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
