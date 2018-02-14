@@ -27,34 +27,35 @@
   &:last-child {
     margin-right: 0;
   }
+}
 
-  &::before {
+.social-list__item:active .social-list__icon {
+  fill: #88b6d1;
+}
+
+  .social-list__icon {
     content: "";
     position: absolute;
+    top: 0;
     bottom: 0;
+    left: 0;
     right: 0;
     margin: auto;
-    width: 27px;
-    height: 27px;
-  }
-
-  &--twitter::before {
-    top: 10px;
-    left: 10px;
-    background: transparent url("../img/icon-twitter.svg") no-repeat;
     fill: #ffffff;
+
+  &--twitter {
+    width: 21px;
+    height: 17px;
   }
 
-  &--facebook::before {
-    top: 10px;
-    left: 15px;
-    background: transparent url("../img/icon-facebook.svg") no-repeat;
+  &--facebook {
+    width: 13px;
+    height: 21px;
   }
 
-  &--youtube::before {
-    top: 15px;
-    left: 8px;
-    background: transparent url("../img/icon-youtube.svg") no-repeat;
+  &--youtube {
+    width: 22px;
+    height: 17px;
   }
 }
 

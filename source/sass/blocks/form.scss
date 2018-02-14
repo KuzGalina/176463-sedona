@@ -50,6 +50,7 @@
 }
 
 .form__wrapper {
+  outline: 2px solid yellow;
   display: flex;
   position: relative;
   text-align: left;
@@ -232,6 +233,30 @@
   cursor: pointer;
 }
 
+.form__icon--phone {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 21px;
+  padding: 17px 19px;
+  bottom: 0;
+  right: 0;
+  fill: #000000;
+  background-color: #e6e6e6;
+}
+
+.form__icon--email {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 14px;
+  padding: 21px 19px;
+  bottom: 0;
+  right: 0;
+  fill: #000000;
+  background-color: #e6e6e6;
+}
+
 @media (min-width: $tablet-width) {
   .form {
     padding: 0 60px;
@@ -243,14 +268,14 @@
     border: none;
 
     &--score {
-      width: 49%;
+      width: 50%;
       flex-direction: column;
       order: 1;
 
     }
 
     &--name {
-      width: 49%;
+      width: 50%;
       order: 2;
       align-items: flex-end;
       padding-left: 60px;
@@ -401,9 +426,16 @@
   }
 
     .form__wrapper {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 25px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 25px;
+
+  }
+
+  .form__input--phone,
+  .form__input--email {
+    padding-right: 58px;
   }
 }
 
@@ -422,11 +454,11 @@
     }
 
     &--name {
+      position: relative;
       width: 360px;
       flex-direction: column;
-      padding-left: 60px;
+      padding-left: 80px;
       padding-bottom: 0;
-      align-items: flex-start;
     }
 
     &--contact {
@@ -446,6 +478,16 @@
     }
   }
 
+  .form__item--name::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 293px;
+    top: 25px;
+    left: 0;
+    background-color: #dbdbdb;
+  }
+
   .form__button {
     margin-bottom: 45px;
     padding: 14px 147px;
@@ -454,10 +496,15 @@
   .form__item--contact .form__wrapper {
     flex-direction: row;
     width: 400px;
+    justify-content: flex-start;
   }
 
   .form__item--name .form__wrapper {
-//    padding-left: 80px;
+    width: 100%;
+  }
+
+  .form__item--name .form__input {
+    width: 100%;
   }
 
   .form__item--score .form__title {
@@ -486,6 +533,7 @@
   .form__item--contact .form__label {
     padding-left: 0;
     width: auto;
+    margin-right: 17px;
   }
 
   .form__container--showplace {
@@ -527,5 +575,10 @@
   .form__input--phone,
   .form__input--email {
     width: 312px;
+  }
+
+  .form__icon--phone {
+    bottom: 0;
+    right: 88px;
   }
 }

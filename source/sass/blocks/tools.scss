@@ -1,0 +1,86 @@
+.tools__replay {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 21px;
+  top: 20px;
+  left: 25px;
+  fill: #5c6870;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #c1c1c1;
+  }
+}
+
+.tools__subtitles {
+  position: absolute;
+  content: "";
+  width: 34px;
+  height: 22px;
+  top: 20px;
+  left: 180px;
+  fill: #5c6870;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #c1c1c1;
+  }
+}
+
+.tools__fullscreen {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  top: 20px;
+  right: 20px;
+  fill: #5c6870;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #c1c1c1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tools__replay{
+    display: block;
+    top: 34px;
+    left: 34px;
+    fill: #ffffff;
+  }
+
+  .tools__fullscreen {
+    top: 34px;
+    right: 40px;
+    fill: #ffffff;
+  }
+
+  .tools__subtitles {
+    fill: #ffffff;
+    top: 34px;
+    left: 520px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tools__subtitles {
+    left: 674px;
+  }
+}

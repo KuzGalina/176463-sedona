@@ -7,6 +7,15 @@
   <title>Фото и видео</title>
 </head>
 <body>
+  <svg style="display: none">
+    <symbol viewBox="0 0 22 20" id="icon-like">
+      <g id="Core" transform="translate(-295.000000, -464.000000)">
+        <g id="thumb-up" transform="translate(295.000000, 464.000000)">
+          <path id="Shape" fill="#000000" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
+        </g>
+      </g>
+    </symbol>
+  </svg>
   <div class="container">
     <header class="page-header">
       <nav class="main-nav main-nav--opened">
@@ -61,7 +70,11 @@
             <span class="item__author">Автор фото: Борис</span>
           </div>
           <div class="description--right">
-            <p class="item__likes">1350</p>
+            <p class="item__likes">1350
+              <svg class="item__icon-like" width="27px" height="23px">
+                <use xlink:href="img/sprite.svg#icon-like">
+            </svg>
+          </p>
           </div>
           </div>
         </div>
@@ -75,11 +88,15 @@
             </figure>
             <div class="features-item__description description">
               <div class="description--left">
-            <b>Местная растительность</b>
+            <b class="item__name">Местная растительность</b>
             <span class="item__author">Автор фото: Сергей</span>
           </div>
           <div class="description--right">
-            <p class="item__likes">143</p>
+            <p class="item__likes">143
+              <svg class="item__icon-like" width="27px" height="23px">
+                <use xlink:href="img/sprite.svg#icon-like">
+            </svg>
+          </p>
           </div>
         </div>
           </div>
@@ -93,11 +110,15 @@
             </figure>
             <div class="features-item__description description">
               <div class="description--left">
-            <b>Дорога на север</b>
+            <b class="item__name">Дорога на север</b>
             <span class="item__author">Автор фото: Петр</span>
           </div>
           <div class="description--right">
-            <p class="item__likes">96</p>
+            <p class="item__likes">96
+              <svg class="item__icon-like" width="27px" height="23px">
+                <use xlink:href="img/sprite.svg#icon-like">
+            </svg>
+          </p>
           </div>
         </div>
           </div>
@@ -111,11 +132,15 @@
             </figure>
             <div class="features-item__description description">
               <div class="description--left">
-            <b>Мост дьявола</b>
+            <b class="item__name">Мост дьявола</b>
             <span class="item__author">Автор фото: Антон</span>
           </div>
           <div class="description--right">
-            <p class="item__likes">254</p>
+            <p class="item__likes">254
+              <svg class="item__icon-like" width="27px" height="23px">
+                <use xlink:href="img/sprite.svg#icon-like">
+            </svg>
+          </p>
           </div>
           </div>
         </div>
@@ -129,10 +154,23 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg">
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg">
-          <img src="img/video-mobile@1x.jpg" srcset="src="img/video-mobile@2x.jpg""></img>
+          <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg"></img>
         </picture>
         </div>
         <section class="video__player">
+          <div class="video__scroll">
+          </div>
+          <div class="video__tools tools">
+            <svg class="tools__replay" width="19px" height="22px">
+              <use xlink:href="img/sprite.svg#icon-replay">
+            </svg>
+            <svg class="tools__subtitles" width="34px" height="22px">
+              <use xlink:href="img/sprite.svg#icon-subtitles">
+            </svg>
+            <svg class="tools__fullscreen" width="22px" height="22px">
+              <use xlink:href="img/sprite.svg#icon-fullscreen">
+            </svg>
+          </div>
         </section>
       </section>
     </main>
@@ -140,18 +178,34 @@
       <p class="page-footer__hash">#Visitsedona</p>
       <ul class="social-list">
         <li class="social-list__item social-list__item--twitter">
-          <a class="social__link" href="https://www.twitter.com/htmlacademy" aria-label="Twitter"></a>
+          <a class="social__link" href="https://www.twitter.com/htmlacademy" aria-label="Twitter">
+            <svg class="social-list__icon social-list__icon--twitter" width="21px" height="17px">
+              <use xlink:href="img/sprite.svg#icon-twitter">
+            </svg>
+          </a>
         </li>
         <li class="social-list__item social-list__item--facebook">
-          <a class="social__link" href="https://www.facebook.com/htmlacademy" aria-label="Facebook"></a>
+          <a class="social__link" href="https://www.facebook.com/htmlacademy" aria-label="Facebook">
+            <svg class="social-list__icon social-list__icon--facebook" width="13px" height="21px">
+              <use xlink:href="img/sprite.svg#icon-facebook">
+            </svg>
+          </a>
         </li>
         <li class="social-list__item social-list__item--youtube">
-          <a class="social__link" href="https://www.youtube.com/htmlacademy" aria-label=YouTube""></a>
+          <a class="social__link" href="https://www.youtube.com/htmlacademy" aria-label=YouTube"">
+            <svg class="social-list__icon social-list__icon--youtube" width="22px" height="17px">
+              <use xlink:href="img/sprite.svg#icon-youtube">
+            </svg>
+          </a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+          <svg class="copyright__logo" width="29px" height="35px">
+            <use xlink:href="img/sprite.svg#icon-html-logo">
+          </svg>
+      </a>
       </div>
     </footer>
   </div>
