@@ -9,10 +9,19 @@
   color: #000000;
 }
 
-.copyright__link {
+.copyright__logo {
   display: block;
-  width: 30px;
-  height: 36px;
-  background: transparent url("../img/logo-htmlacademy.svg") no-repeat;
-  background-size: contain;
+  width: 29px;
+  height: 35px;
+  fill: #000000;
+  cursor: pointer;
+}
+
+.copyright__logo:hover,
+.copyright__logo:focus {
+  fill: #81b3d2;
+}
+
+.copyright__logo:active {
+  fill: #b2b2b2;
 }

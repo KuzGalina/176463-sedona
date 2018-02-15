@@ -17,12 +17,13 @@
 
 @media (min-width: $tablet-width) {
   .album {
-    padding: 0 0 32px 0;
+    padding: 0 0 31px 0;
   }
 
   .album__header {
     width: 438px;
     padding: 70px 165px 72px 165px;
+    border: none;
   }
 
   .album__title {
@@ -34,6 +35,6 @@
 
 @media (min-width: $desktop-width) {
   .album__header {
-    padding: 125px 380px 65px 380px;
+    padding: 105px 380px 65px 380px;
   }
 }

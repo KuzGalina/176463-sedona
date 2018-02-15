@@ -1,5 +1,5 @@
 .video-album {
-  padding-bottom: 115px;
+  padding-bottom: 90px;
   text-align: center;
 }
 
@@ -7,25 +7,15 @@
   padding: 35px 0 25px 0;
 }
 
-.video__player {
-  position: relative;
-  width: 280px;
-  height: 110px;
-  background-color: grey;
-  margin: -50px auto;
-  z-index: 3;
-}
-
 .video-album__title {
   @include font-title;
 }
 
-.video-album__video {
-  background-size: cover;
-  margin: 0 auto;
-}
-
 @media (min-width: $tablet-width) {
+  .video-album {
+    padding-bottom: 120px;
+  }
+
   .video-album__header {
     padding: 28px 170px 75px 170px;
   }
@@ -34,18 +24,6 @@
     font-size: 30px;
     line-height: 30px;
     font-weight: bold;
-  }
-
-  .video-album__video {
-    width: 648px;
-    height: 500px;
-  }
-
-  .video__player {
-    position: relative;
-    width: 648px;
-    height: 93px;
-    margin: -90px auto;
   }
 }
 
@@ -56,17 +34,5 @@
 
   .video-album__header {
     padding: 35px 385px 60px 385px;
-  }
-
-  .video-album__video {
-    width: 800px;
-    height: 500px;
-  }
-
-  .video__player {
-    position: relative;
-    width: 800px;
-    height: 93px;
-    margin: -90px auto;
   }
 }

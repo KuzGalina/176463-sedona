@@ -10,31 +10,17 @@
   position: relative;
   padding: 5px 40px 0 70px;
   text-align: left;
+}
 
-  &::after {
+.reasons-list__icon {
     content: "";
     position: absolute;
-    top: 0;
-    left: 20px;
+    top: -5px;
+    left: 25px;
     z-index: 2;
     width: 37px;
     height: 37px;
-  }
-
-  &--house::after {
-    background: transparent url("../img/icon-house.svg") no-repeat center;
-    background-size: contain;
-  }
-
-  &--gift::after {
-    background: transparent url("../img/icon-gift.svg") no-repeat center;
-    background-size: contain;
-  }
-
-  &--food::after {
-    background: transparent url("../img/icon-burger.svg") no-repeat center;
-    background-size: contain;
-  }
+    fill: #a1c6dd;
 }
 
 .reasons-list__description {
@@ -75,6 +61,19 @@
 
   .reasons-list__title {
     @include font-title-tablet;
+  }
+
+  .reasons-list__icon {
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 2;
+      width: 81px;
+      height: 72px;
+      fill: #a1c6dd;
   }
 }
 
