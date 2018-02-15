@@ -252,12 +252,12 @@
             <section class="form__item form__item--name">
               <h3 class="form__title">Представьтесь:</h3>
               <div class="form__wrapper">
-                <label for="name" class="form__label">Имя:</label>
-                <input class="form__input form__input--name" type="text" id="name" placeholder="Петр">
+                <label for="name" class="form__label">Имя:<sup>*</sup></label>
+                <input class="form__input form__input--name" type="text" id="name" placeholder="Петр" required>
               </div>
               <div class="form__wrapper">
-                <label for="surname" class="form__label">Фамилия:</label>
-                <input class="form__input form__input--surname" type="text" id="surname" placeholder="Иванов">
+                <label for="surname" class="form__label">Фамилия:<sup>*</sup></label>
+                <input class="form__input form__input--surname" type="text" id="surname" placeholder="Иванов" required>
               </div>
               <div class="form__wrapper">
                 <label for="patronymic" class="form__label">Отчество:</label>
@@ -268,15 +268,15 @@
               <h3 class="form__title">Контактная информация:</h3>
               <div class="form__container--contact">
               <div class="form__wrapper">
-                <label for="phone" class="form__label"><span class="form__label--visually-hidden">Контактный</span> телефон:</label>
-                <input class="form__input form__input--phone" type="text" id="phone" placeholder="Введите телефон">
+                <label for="phone" class="form__label"><span class="form__label--visually-hidden">Контактный</span> телефон:<sup>*</sup></label>
+                <input class="form__input form__input--phone" type="tel" id="phone" placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
                 <svg class="form__icon--phone" width="19px" height="21px">
                   <use xlink:href="img/sprite.svg#icon-phone">
                 </svg>
               </div>
               <div class="form__wrapper">
-                <label for="email" class="form__label">Электронная почта:</label>
-                <input class="form__input form__input--email" type="email" id="email" placeholder="Введите e-mail">
+                <label for="email" class="form__label">Электронная почта:<sup>*</sup></label>
+                <input class="form__input form__input--email" type="email" id="email" placeholder="Введите e-mail" required>
                 <svg class="form__icon--email" width="18px" height="14px">
                   <use xlink:href="img/sprite.svg#icon-email">
                 </svg>
@@ -345,6 +345,9 @@
               <textarea class="form__input form__input--textarea" type="textarea">Опишите подробно все свои восторги</textarea>
             </section>
             <input class="form__button button-page" type="submit" value="Отправить отзыв">
+            <p class="form__status">
+              <sup>*</sup> — Обязательные поля
+            </p>
           </form>
       </section>
     </main>
@@ -383,6 +386,26 @@
       </div>
     </footer>
   </div>
+  <section class="modal-failure">
+    <h3 class="modal-failure__title">Что-то пошло не так!</h3>
+    <p class="modal-failure__text">
+      Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить.
+    </p>
+    <button class="modal-failure__button button-page" type="button">Закрыть</button>
+  </section>
+  
+  <section class="modal-sucsess">
+    <div class="modal-sucsess__text-container">
+    <h3 class="modal-sucsess__title">Ваш отзыв отправлен!</h3>
+    <p class="modal-sucsess__text">
+      Спасибо за Ваше участие, Ваш отзыв уже поступил к нам.
+      В ближайшее время мы опубликуем его на сайте.
+    </p>
+  </div>
+    <div class="modal-sucsess__button-container">
+    <button class="modal-sucsess__button button-page" type="button">Закрыть</button>
+  </div>
+  </section>
   <script src="js/scripts.js"></script>
 </body>
 </html>

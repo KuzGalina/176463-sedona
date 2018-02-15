@@ -1,6 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 0 20px;
 }
 
@@ -50,7 +51,6 @@
 }
 
 .form__wrapper {
-  outline: 2px solid yellow;
   display: flex;
   position: relative;
   text-align: left;
@@ -257,6 +257,10 @@
   background-color: #e6e6e6;
 }
 
+.form__status {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .form {
     padding: 0 60px;
@@ -437,6 +441,12 @@
   .form__input--email {
     padding-right: 58px;
   }
+
+  .form__status {
+    display: flex;
+    text-transform: uppercase;
+    order: 15;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -542,7 +552,7 @@
   }
 
   .form__input--textarea {
-    width: 920px;
+    width: 960px;
     height: 160px;
     padding: 20px 20px;
   }
@@ -579,6 +589,10 @@
 
   .form__icon--phone {
     bottom: 0;
-    right: 88px;
+    right: 83px;
+  }
+
+  .form__icon--email {
+    right: 6px;
   }
 }
