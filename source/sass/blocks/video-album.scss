@@ -7,55 +7,8 @@
   padding: 35px 0 25px 0;
 }
 
-.video__player {
-  position: relative;
-  width: 280px;
-  margin: -50px auto;
-  z-index: 3;
-}
-
-.video__scroll {
-  outline: 2px solid yellow;
-  background-color: rgba(102, 102, 102, 0.4);
-  height: 45px;
-}
-
-.video__scroll::before {
-  position: absolute;
-  content: "";
-  width: 236px;
-  height: 2px;
-  background-color: #858585;
-  top: 22px;
-  left: 21px;
-  cursor: pointer;
-}
-
-.video__scroll::after {
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: #ffffff;
-  top: 18px;
-  left: 85px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.video__tools {
-  position: relative;
-  height: 65px;
-  background-color: #f2f2f2;
-}
-
 .video-album__title {
   @include font-title;
-}
-
-.video-album__video {
-  background-size: cover;
-  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -72,51 +25,6 @@
     line-height: 30px;
     font-weight: bold;
   }
-
-  .video-album__video {
-    width: 648px;
-    height: 500px;
-  }
-
-  .video__player {
-    position: relative;
-    width: 648px;
-    height: 93px;
-    margin: -90px auto;
-  }
-
-  .video__scroll {
-    display: none;
-  }
-
-  .video__tools {
-    position: absolute;
-    bottom: 3px;
-    width: 100%;
-    height: 93px;
-    background-color: rgba(102, 102, 102, 0.4);
-  }
-
-  .video__tools::before {
-    position: absolute;
-    content: "";
-    width: 390px;
-    height: 2px;
-    background-color: #858585;
-    top: 40px;
-    left: 90px;
-  }
-
-  .video__tools::after {
-    position: absolute;
-    content: "";
-    width: 10px;
-    height: 10px;
-    background-color: #ffffff;
-    top: 35px;
-    left: 203px;
-    border-radius: 50%;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -126,29 +34,5 @@
 
   .video-album__header {
     padding: 35px 385px 60px 385px;
-  }
-
-  .video-album__video {
-    width: 800px;
-    height: 500px;
-  }
-
-  .video__player {
-    position: relative;
-    width: 800px;
-    height: 93px;
-    margin: -90px auto;
-  }
-
-  .video__tools {
-
-    &::before {
-    top: 45px;
-    width: 545px;
-  }
-
-    &::after {
-      top: 40px;
-    }
   }
 }

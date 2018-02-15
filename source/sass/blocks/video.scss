@@ -1,0 +1,13 @@
+.video {
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.video__player {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: -50px auto;
+  z-index: 3;
+  background-color: grey;
+}

@@ -5,13 +5,13 @@
       display: none;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: 768px) {
       .page-header__clouds {
         display: block;
       }
     }
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: 1280px) {
       .page-header__blue-space {
         display: block;
       }
