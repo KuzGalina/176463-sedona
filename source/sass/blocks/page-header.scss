@@ -40,6 +40,10 @@
   .page-header__logo-image {
     top: 0;
   }
+
+  .page-header__clouds {
+    display: inline-block;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -51,5 +55,9 @@
   .page-header__logo {
     width: 188px;
     height: 98px;
+  }
+
+  .page-header__blue-space {
+    display: block;
   }
 }

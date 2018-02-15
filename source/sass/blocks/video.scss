@@ -1,4 +1,5 @@
 .video {
+  display: flex;
   background-size: cover;
   margin: 0 auto;
 }
@@ -9,5 +10,85 @@
   width: 280px;
   margin: -50px auto;
   z-index: 3;
-  background-color: grey;
+}
+
+.video__scroll {
+  outline: 2px solid yellow;
+  position: relative;
+  background-color: rgba(102, 102, 102, 0.4);
+  height: 45px;
+}
+
+.video__scroll::before {
+  position: absolute;
+  content: "";
+  width: 236px;
+  height: 2px;
+  background-color: #858585;
+  top: 22px;
+  left: 21px;
+  cursor: pointer;
+}
+
+.video__scroll::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  top: 18px;
+  left: 85px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    width: 648px;
+    height: 500px;
+  }
+
+  .video__player {
+    flex-direction: row;
+    position: relative;
+    width: 648px;
+    height: 93px;
+    margin: -90px auto;
+  }
+
+  .video__scroll {
+    width: 398px;
+    height: 91px;
+  }
+
+
+
+
+
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 800px;
+    height: 500px;
+  }
+
+  .video__player {
+    position: relative;
+    width: 800px;
+    height: 93px;
+    margin: -90px auto;
+  }
+
+  .video__tools {
+
+    &::before {
+    top: 45px;
+    width: 545px;
+  }
+
+    &::after {
+      top: 40px;
+    }
+  }
 }
