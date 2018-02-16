@@ -38,12 +38,12 @@
   align-self: center;
   flex-grow: 3;
   width: 320px;
-  height: 260px;
+  height: 100%;
 }
 
 .features__image {
-  width: 320px;
-  height: 260px;
+  width: 100%; //320
+  height: 100%;  //260
 }
 
 .features__list {
@@ -97,13 +97,13 @@
 
   .features__image-wrapper {
     width: 512px;
-    height: 256px;
+    height: 100%;
     flex-grow: 3;
   }
 
   .features__image {
-    width: 512px;
-    height: 256px;
+    width: 512px;  //512
+    height: 100%; //256
   }
 }
 
