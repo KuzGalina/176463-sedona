@@ -39,7 +39,7 @@
   align-self: center;
   flex-grow: 3;
   width: 320px;
-  height: 260px;;
+  height: 260px;
 }
 
 .features__image {
@@ -51,6 +51,31 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.features-item__number {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 1px;
+    background-color: white;
+  }
+
+  &::after {
+    margin-left: 38px;
+  }
+
+  &::before {
+    margin-right: 38px;
+  }
 }
 
 @media (max-width: $mobile-width-only) {

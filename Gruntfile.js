@@ -59,7 +59,7 @@ module.exports = function(grunt) {
       },
       sprite: {
         files: {
-          "build/img/sprite.svg": ["source/img/icon-*.svg"]
+          "build/img/sprite.svg": ["source/img/icon-*.svg", "source/img/logo-htmlacademy.svg"]
         }
       }
     },
@@ -73,7 +73,8 @@ module.exports = function(grunt) {
       html: {
         files: [{
           expand: true,
-          src: ["source/*.html"],
+          cwd: "source",
+          src: ["*.html"],
           dest: "build"
         }]
       }

@@ -51,6 +51,7 @@
 }
 
 .form__wrapper {
+  outline: 2px solid red;
   display: flex;
   position: relative;
   text-align: left;
@@ -237,7 +238,7 @@
   position: absolute;
   content: "";
   width: 18px;
-  height: 21px;
+  height: 22px;
   padding: 17px 19px;
   bottom: 0;
   right: 0;
