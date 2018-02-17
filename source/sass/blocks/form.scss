@@ -242,6 +242,7 @@
   padding: 17px 19px;
   bottom: 0;
   right: 0;
+  margin: auto;
   fill: #000000;
   background-color: #e6e6e6;
 }
@@ -311,6 +312,15 @@
       padding-top: 30px;
       order: 5;
     }
+  }
+
+  .form__input--name {
+    width: 215px;
+  }
+
+  .form__input--surname,
+  .form__input--patronymic {
+    width: 178px;
   }
 
   .form__container--showplace {
@@ -438,6 +448,7 @@
 
   .form__input--phone,
   .form__input--email {
+    height: 56px;
     padding-right: 58px;
   }
 
@@ -514,6 +525,11 @@
 
   .form__item--name .form__input {
     width: 100%;
+
+    &--surname,
+    &--patronymic {
+      width: 311px;
+    }
   }
 
   .form__item--score .form__title {
@@ -536,7 +552,16 @@
   }
 
   .form__container--contact .form__wrapper {
-    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child {
+      width: 400px;
+    }
+
+    &:last-child {
+      width: 480px;
+    }
   }
 
   .form__item--contact .form__label {
@@ -584,14 +609,5 @@
   .form__input--phone,
   .form__input--email {
     width: 312px;
-  }
-
-  .form__icon--phone {
-    bottom: 0;
-    right: 83px;
-  }
-
-  .form__icon--email {
-    right: 6px;
   }
 }

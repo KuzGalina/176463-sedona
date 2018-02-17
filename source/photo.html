@@ -7,6 +7,9 @@
   <title>Фото и видео</title>
 </head>
 <body>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <div class="container">
     <header class="page-header">
       <nav class="main-nav main-nav--opened">
@@ -262,7 +265,7 @@
           <div class="album__item item item--big">
             <figure class="item__picture-wrapper">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg, img/photo-sunset-desktop@2x.jpg">
+                <source media="(min-width: 1280px)" srcset="img/photo-sunset-desktop@1x.jpg, img/photo-sunset-desktop@2x.jpg">
                 <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg">
                 <img class="item__picture" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg" alt="Неродные просторы">
               </picture>
@@ -275,7 +278,7 @@
               <div class="description--right">
                 <p class="item__likes">1350
                   <svg class="item__icon-like" width="27px" height="23px">
-                    <use xlink:href="img/sprite.svg#icon-like">
+                    <use xlink:href="#icon-like">
                   </svg>
                 </p>
               </div>
@@ -284,7 +287,7 @@
           <div class="album__item item">
             <figure class="item__picture-wrapper">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg, img/photo-cactus-desktop@2x.jpg">
+                <source media="(min-width: 1280px)" srcset="img/photo-cactus-desktop@1x.jpg, img/photo-cactus-desktop@2x.jpg">
                 <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg">
                 <img class="item__picture" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg" alt="Местная растительность">
               </picture>
@@ -297,7 +300,7 @@
               <div class="description--right">
                 <p class="item__likes">143
                   <svg class="item__icon-like" width="27px" height="23px">
-                    <use xlink:href="img/sprite.svg#icon-like">
+                    <use xlink:href="#icon-like">
                   </svg>
                 </p>
               </div>
@@ -306,7 +309,7 @@
           <div class="album__item item">
             <figure class="item__picture-wrapper">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg, img/photo-roads-desktop@2x.jpg">
+                <source media="(min-width: 1280px)" srcset="img/photo-roads-desktop@1x.jpg, img/photo-roads-desktop@2x.jpg">
                 <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg">
                 <img class="item__picture" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@1x.jpg" alt="Дорога на север">
               </picture>
@@ -319,7 +322,7 @@
               <div class="description--right">
                 <p class="item__likes">96
                   <svg class="item__icon-like" width="27px" height="23px">
-                    <use xlink:href="img/sprite.svg#icon-like">
+                    <use xlink:href="#icon-like">
                   </svg>
                 </p>
               </div>
@@ -328,7 +331,7 @@
           <div class="album__item item">
             <figure class="item__picture-wrapper">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg, img/photo-bridge-desktop@2x.jpg">
+                <source media="(min-width: 1280px)" srcset="img/photo-bridge-desktop@1x.jpg, img/photo-bridge-desktop@2x.jpg">
                 <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg">
                 <img class="item__picture" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg" alt="Мост дьявола">
               </picture>
@@ -341,7 +344,7 @@
               <div class="description--right">
                 <p class="item__likes">254
                 <svg class="item__icon-like" width="27px" height="23px">
-                  <use xlink:href="img/sprite.svg#icon-like">
+                  <use xlink:href="#icon-like">
                 </svg>
               </p>
             </div>
@@ -362,16 +365,16 @@
         </div>
         <section class="video__player player">
           <svg class="player__replay" width="19px" height="22px">
-            <use xlink:href="img/sprite.svg#icon-video-replay">
+            <use xlink:href="#icon-video-replay">
           </svg>
           <div class="player__scroll">
           </div>
           <div class="player-container">
             <svg class="player__subtitles" width="34px" height="22px">
-              <use xlink:href="img/sprite.svg#icon-video-subtitles">
+              <use xlink:href="#icon-video-subtitles">
             </svg>
             <svg class="player__fullscreen" width="22px" height="22px">
-              <use xlink:href="img/sprite.svg#icon-video-fullscreen">
+              <use xlink:href="#icon-video-fullscreen">
             </svg>
           </div>
         </section>
@@ -383,21 +386,21 @@
         <li class="social-list__item social-list__item--twitter">
           <a class="social__link" href="https://www.twitter.com/htmlacademy" aria-label="Twitter">
             <svg class="social-list__icon social-list__icon--twitter" width="21px" height="17px">
-              <use xlink:href="img/sprite.svg#icon-twitter">
+              <use xlink:href="#icon-twitter">
             </svg>
           </a>
         </li>
         <li class="social-list__item social-list__item--facebook">
           <a class="social__link" href="https://www.facebook.com/htmlacademy" aria-label="Facebook">
             <svg class="social-list__icon social-list__icon--facebook" width="13px" height="21px">
-              <use xlink:href="img/sprite.svg#icon-facebook">
+              <use xlink:href="#icon-facebook">
             </svg>
           </a>
         </li>
         <li class="social-list__item social-list__item--youtube">
           <a class="social__link" href="https://www.youtube.com/htmlacademy" aria-label=YouTube"">
             <svg class="social-list__icon social-list__icon--youtube" width="22px" height="17px">
-              <use xlink:href="img/sprite.svg#icon-youtube">
+              <use xlink:href="#icon-youtube">
             </svg>
           </a>
         </li>
@@ -406,7 +409,7 @@
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
           <svg class="copyright__logo" width="29px" height="35px">
-            <use xlink:href="img/sprite.svg#icon-html-logo">
+            <use xlink:href="#logo-htmlacademy">
           </svg>
         </a>
       </div>

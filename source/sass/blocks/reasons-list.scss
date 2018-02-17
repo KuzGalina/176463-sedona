@@ -8,7 +8,7 @@
 
 .reasons-list__item {
   position: relative;
-  padding: 5px 40px 0 70px;
+  padding: 5px 40px 15px 70px;
   text-align: left;
 }
 
@@ -24,6 +24,8 @@
 }
 
 .reasons-list__description {
+  font-size: 14px;
+  line-height: 21px;
   margin-bottom: 5px;
 }
 
@@ -40,7 +42,7 @@
 
   .reasons-list__item {
     width: 158px;
-    padding: 160px 45px 40px 45px;
+    padding: 160px 45px 60px 45px;
     flex-grow: 1;
     text-align: center;
 
@@ -80,7 +82,7 @@
 @media (min-width: $desktop-width) {
   .reasons-list__item {
     width: 260px;
-    padding: 150px 70px 65px 70px;
+    padding: 160px 70px 75px 70px;
   }
 
   .reasons-list__item::after {
