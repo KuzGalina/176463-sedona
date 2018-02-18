@@ -272,7 +272,8 @@
 }
 
 .form__item--showplace .form__title {
-//  width: 280px;
+  width: 100%;
+  align-self: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -392,22 +393,6 @@
     margin-bottom: 40px;
   }
 
-  .form__item--showplace .form__title::after,
-  .form__item--showplace .form__title::before {
-    content: "";
-    width: 125px;
-    height: 1px;
-    background-color: #dbdbdb;
-  }
-
-  .form__item--showplace .form__title::after {
-    margin-left: 30px;
-  }
-
-  .form__item--showplace .form__title::before {
-    margin-right: 30px;
-  }
-
   .form__item--textarea .form__title {
     margin-bottom: 50px;
     display: flex;
@@ -479,11 +464,31 @@
     text-transform: uppercase;
     order: 15;
   }
+
+  .form__item--showplace .form__title {
+    overflow: hidden;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .form__item--showplace .form__title:after,
+  .form__item--showplace .form__title:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1px;
+    background: #dbdbdb;
+    border: solid #ffffff;
+    border-width: 0 10px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .form {
-    padding: 0 120px 30px 120px;
+    padding: 0 120px 20px 120px;
   }
 
   .form__item {
@@ -568,6 +573,7 @@
 
   .form__item--contact .form__title {
     margin-bottom: 65px;
+    text-align: center;
   }
 
   .form__container--contact {
@@ -608,36 +614,26 @@
   }
 
   .form__item--contact .form__title::after,
-  .form__item--contact .form__title::before,
-  .form__item--showplace .form__title::after,
-  .form__item--showplace .form__title::before {
-    width: 280px;
+  .form__item--contact .form__title::before {
+     width: 280px;
     height: 1px;
   }
 
   .form__item--textarea .form__title {
-    margin-bottom: 55px;
-  }
-
-  .form__item--showplace .form__title::after {
-    margin-left: 58px;
-  }
-
-  .form__item--showplace .form__title::before {
-    margin-right: 58px;
+    margin-bottom: 65px;
   }
 
   .form__item--textarea .form__title::after,
   .form__item--textarea .form__title::before {
-    width: 124px;
+    width: 280px;
   }
 
   .form__item--textarea .form__title::after {
-    margin-left: 70px;
+    margin-left: 73px;
   }
 
-  .form__item--teatarea .form__title::before {
-    margin-right: 70px;
+  .form__item--textarea .form__title::before {
+    margin-right: 73px;
   }
 
   .form__label--visually-hidden {
