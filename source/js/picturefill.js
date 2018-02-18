@@ -1,9 +1,3 @@
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,19 +14,19 @@
 
   <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-7a12427f1445.css" integrity="sha512-ehJCfxRFqU8Lt/+Hwc4cvp41sPisCp1U2d03SlbM3aKVZcxiYDTVmBsAtOVgAtZ912JFOebwrPXr/JcDNd6bGA==" media="all" rel="stylesheet" />
   <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-b5aaea3557bf.css" integrity="sha512-tarqNVe/BUUdu+2IPP7ELoJbVpfvnbvxHVQ+1QeiLHSP/WzQXttdlvVeAZDpueAcaZvJqSS4OlkGCfcQWeQ99w==" media="all" rel="stylesheet" />
-  
-  
-  
-  
+
+
+
+
 
   <meta name="viewport" content="width=device-width">
-  
+
   <title>picturefill/picturefill.js at 2.3.1 · scottjehl/picturefill</title>
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
   <meta property="fb:app_id" content="1401488693436528">
 
-    
+
     <meta content="https://avatars3.githubusercontent.com/u/214783?s=400&amp;v=4" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="scottjehl/picturefill" property="og:title" /><meta content="https://github.com/scottjehl/picturefill" property="og:url" /><meta content="picturefill - A responsive image polyfill for &lt;picture&gt;, srcset, sizes, and more" property="og:description" />
 
   <link rel="assets" href="https://assets-cdn.github.com/">
@@ -40,7 +34,7 @@
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
   <meta name="request-id" content="2677:29332:1E4BEB3:31F9E34:5A8823AF" data-pjax-transient>
-  
+
 
   <meta name="selected-link" value="repo_source" data-pjax-transient>
 
@@ -59,7 +53,7 @@
   <meta class="js-ga-set" name="dimension1" content="Logged In">
 
 
-  
+
 
       <meta name="hostname" content="github.com">
   <meta name="user-login" content="KuzGalina">
@@ -72,7 +66,7 @@
   <meta name="html-safe-nonce" content="c4f1a2793a8fead5b673a1f933e55ebfbf92c95c">
 
   <meta http-equiv="x-pjax-version" content="52a4212cfb2343b383b6b3342fa12615">
-  
+
 
       <link href="https://github.com/scottjehl/picturefill/commits/2.3.1.atom" rel="alternate" title="Recent Commits to picturefill:2.3.1" type="application/atom+xml">
 
@@ -102,19 +96,19 @@
   </head>
 
   <body class="logged-in env-production page-blob">
-    
+
 
   <div class="position-relative js-header-wrapper ">
     <a href="#start-of-content" tabindex="1" class="bg-black text-white p-3 show-on-focus js-skip-to-content">Skip to content</a>
     <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
 
-    
-    
-    
 
 
 
-        
+
+
+
+
 <header class="Header  f5" role="banner">
   <div class="d-flex px-3 flex-justify-between container-lg">
     <div class="d-flex flex-justify-between ">
@@ -171,11 +165,11 @@
       </div>
 
       <div class="d-flex">
-        
+
 <ul class="user-nav d-flex flex-items-center list-style-none" id="user-links">
   <li class="dropdown js-menu-container">
     <span class="d-inline-block  px-2">
-      
+
 
     </span>
   </li>
@@ -190,7 +184,7 @@
       </summary>
 
       <ul class="dropdown-menu dropdown-menu-sw">
-        
+
 <a class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
   New repository
 </a>
@@ -277,7 +271,7 @@
   </div>
 </header>
 
-      
+
 
   </div>
 
@@ -291,7 +285,7 @@
   <div role="main" class="application-main ">
         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
     <div id="js-repo-pjax-container" data-pjax-container >
-      
+
 
 
 
@@ -382,7 +376,7 @@
   </li>
 
   <li>
-    
+
   <div class="js-toggler-container js-social-container starring-container ">
     <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/scottjehl/picturefill/unstar" class="starred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="6+9S7AOzhcyg7LGGMLRd2ZydR2qWqyquyt7++vZwasammt1z7QgKRvP2rrWyKSwZE5+wCt1hrPw579580xFP5w==" /></div>
       <input type="hidden" name="context" value="repository"></input>
@@ -445,7 +439,7 @@
 </h1>
 
     </div>
-    
+
 <nav class="reponav js-repo-nav js-sidenav-container-pjax container"
      itemscope
      itemtype="http://schema.org/BreadcrumbList"
@@ -498,16 +492,16 @@
 <div class="container new-discussion-timeline experiment-repo-nav  ">
   <div class="repository-content ">
 
-    
+
   <a href="/scottjehl/picturefill/blob/4e6db73fea78124092be5ba424d053a008a92a6b/dist/picturefill.js" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
 
   <!-- blob contrib key: blob_contributors:v21:4af9be9407460f6607385fda913ba2d4 -->
 
   <div class="file-navigation js-zeroclipboard-container">
-    
+
 <div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
   <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
-    
+
     type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
       <i>Tag:</i>
       <span class="js-select-button css-truncate-target">2.3.1</span>
@@ -965,7 +959,7 @@
   </div>
 
 
-  
+
   <div class="commit-tease">
       <span class="float-right">
         <a class="commit-tease-sha" href="/scottjehl/picturefill/commit/8bc1c7bb5840ff0e5757a611232a0deaba0a48b1" data-pjax>
@@ -1105,7 +1099,7 @@
   </div>
 </div>
 
-    
+
 
   <div itemprop="text" class="blob-wrapper data type-javascript">
       <table class="highlight tab-size js-file-line-container" data-tab-size="4">
@@ -4207,7 +4201,7 @@
 
   </div>
 
-      
+
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
@@ -4245,14 +4239,14 @@
   </div>
 
 
-    
+
     <script crossorigin="anonymous" integrity="sha512-ahpMX7p3Gv2aEKMUMVgKCuUiCnC01PNqi3E8MgZqMsqfwEDsh73xjNtGRMm5zjtce/3yzroIOje9sBe0JWwM+g==" src="https://assets-cdn.github.com/assets/frameworks-6a1a4c5fba77.js" type="application/javascript"></script>
-    
+
     <script async="async" crossorigin="anonymous" integrity="sha512-q4wtF1N3cvEQy/oMCz6sYm8tVt1to/598VKV736ek8cDbetDZbA8lXxwLwtG2lDe2UjrQN/2qnvFEo1M/ErCRw==" src="https://assets-cdn.github.com/assets/github-ab8c2d175377.js" type="application/javascript"></script>
-    
-    
-    
-    
+
+
+
+
   <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
     <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
     <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
@@ -4268,8 +4262,7 @@
   </div>
 </div>
 
-  
+
 
   </body>
 </html>
-
