@@ -12,3 +12,13 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+var popup = document.querySelector(".modal-sucsess");
+
+if (popup) {
+  var close = popup.querySelector(".modal-sucsess__button");
+  close.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-sucsess--close");
+  });
+}

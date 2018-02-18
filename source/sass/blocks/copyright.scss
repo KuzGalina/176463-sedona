@@ -4,6 +4,8 @@
 }
 
 .copyright__text {
+  display: flex;
+  align-items: center;
   margin: 0;
   margin-right: 10px;
   color: #000000;
@@ -15,13 +17,13 @@
   height: 35px;
   fill: #000000;
   cursor: pointer;
-}
 
-.copyright__logo:hover,
-.copyright__logo:focus {
-  fill: #81b3d2;
-}
+  &:hover,
+  &:focus {
+    fill: #81b3d2;
+  }
 
-.copyright__logo:active {
-  fill: #b2b2b2;
+  &:active {
+    fill: #b2b2b2;
+  }
 }

@@ -1,22 +1,25 @@
 .form {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  justify-content: space-between;
 }
 
 .form__item {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 15px;
+  padding: 15px 20px 30px 20px;
+  box-sizing: border-box;
   border-bottom: 1px solid #e5e5e5;
 
   &--showplace {
     padding-bottom: 20px;
+    text-align: center;
   }
 
-  &--name {
-    padding-bottom: 15px;
+  &--textarea {
+    padding-bottom: 45px;
+    border-bottom: none;
   }
 }
 
@@ -46,26 +49,25 @@
 }
 
 .form__item--contact .form__title {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .form__wrapper {
-  outline: 2px solid yellow;
   display: flex;
   position: relative;
   text-align: left;
   margin-bottom: 20px;
   justify-content: space-between;
   align-items: center;
-}
 
-.form-wrapper:last-child {
-  margin: 0;
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .form__item--contact .form__wrapper {
   flex-direction: column;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .form__item--score .form__wrapper {
@@ -83,6 +85,7 @@
 .form__item--contact .form__label {
   width: 100%;
   margin-bottom: 10px;
+  padding-left: 20px;
 }
 
 .form__item--name .form__label {
@@ -97,27 +100,27 @@
   position: relative;
   padding: 15px;
   width: 100%;
-  border: none;
+  height: 58px;
+  border: 4px solid #f2f2f2;
   background-color: #f2f2f2;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   box-sizing: border-box;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: #e5e5e5;
+    border: 4px solid #e5e5e5;
   }
 
-  &:active {
+  &:focus {
     background-color: #ffffff;
     border: 4px solid #e6e6e6;
-    padding: 11px;
   }
 }
 
 .form__input--name {
-  width: 215px;
+  width: 230px;
 }
 
 .form__input--surname {
@@ -134,6 +137,7 @@
   padding: 15px 20px;
   box-sizing: border-box;
   resize: none;
+  align-self: center;
 }
 
 .form__input--radio {
@@ -220,8 +224,6 @@
 }
 
 .form__button {
-  margin-top: 50px;
-  margin-bottom: 50px;
   padding: 15px 45px 15px 45px;
   border: 0;
   font-size: 21px;
@@ -231,16 +233,20 @@
   background-color: $bg-blue;
   text-align: center;
   cursor: pointer;
+  box-sizing: border-box;
+  width: 280px;
+  margin: 0 auto 50px auto;
 }
 
 .form__icon--phone {
   position: absolute;
   content: "";
   width: 18px;
-  height: 21px;
+  height: 22px;
   padding: 17px 19px;
   bottom: 0;
   right: 0;
+  margin: auto;
   fill: #000000;
   background-color: #e6e6e6;
 }
@@ -257,28 +263,43 @@
   background-color: #e6e6e6;
 }
 
+.form__status {
+  display: none;
+}
+
+.form__item--contact .form__title {
+  margin-bottom: 5px;
+}
+
+.form__item--showplace .form__title {
+  width: 100%;
+  align-self: center;
+}
+
 @media (min-width: $tablet-width) {
   .form {
-    padding: 0 60px;
+    padding: 0 55px;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .form__item {
     border: none;
+    padding: 0;
 
     &--score {
       width: 50%;
       flex-direction: column;
+      justify-content: flex-start;
       order: 1;
-
+      padding: 25px 0 25px 0;
     }
 
     &--name {
       width: 50%;
       order: 2;
       align-items: flex-end;
-      padding-left: 60px;
+      padding: 25px 0 25px 60px;
       box-sizing: border-box;
     }
 
@@ -296,17 +317,26 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      padding-top: 25px;
+      padding: 0;
       order: 4;
     }
 
     &--textarea {
       justify-content: center;
       width: 100%;
-      margin-bottom: 60px;
-      padding-top: 30px;
+      margin-bottom: 65px;
+      padding-top: 50px;
       order: 5;
     }
+  }
+
+  .form__input--name {
+    width: 215px;
+  }
+
+  .form__input--surname,
+  .form__input--patronymic {
+    width: 178px;
   }
 
   .form__container--showplace {
@@ -321,6 +351,10 @@
     width: 200px;
   }
 
+  .form__item--name .form__wrapper {
+    margin-bottom: 20px;
+  }
+
   .form__item--contact .form__label {
     padding-left: 20px;
   }
@@ -328,10 +362,11 @@
   .form__item--name .form__title,
   .form__item--score .form__title {
     align-self: flex-start;
+    margin-bottom: 55px;
   }
 
   .form__item--contact .form__title {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
   }
@@ -353,27 +388,9 @@
   }
 
   .form__item--showplace .form__title {
-    margin-bottom: 50px;
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
-    text-align: center;
-  }
-
-  .form__item--showplace .form__title::after,
-  .form__item--showplace .form__title::before {
-    content: "";
-    width: 123px;
-    height: 1px;
-    background-color: #dbdbdb;
-  }
-
-  .form__item--showplace .form__title::after {
-    margin-left: 52px;
-  }
-
-  .form__item--showplace .form__title::before {
-    margin-right: 52px;
+    margin-bottom: 40px;
   }
 
   .form__item--textarea .form__title {
@@ -387,21 +404,25 @@
   .form__item--textarea .form__title::after,
   .form__item--textarea .form__title::before {
     content: "";
-    width: 128px;
+    width: 120px;
     height: 1px;
     background-color: #dbdbdb;
   }
 
   .form__item--textarea .form__title::after {
-    margin-left: 70px;
+    margin-left: 80px;
   }
 
   .form__item--textarea .form__title::before {
-    margin-right: 70px;
+    margin-right: 80px;
   }
 
   .form__item--score .form__wrapper {
     margin-bottom: 25px;
+  }
+
+  .form__item--contact .form__wrapper {
+    margin-bottom: 30px;
   }
 
   .form__title {
@@ -411,12 +432,12 @@
 
   .form__button {
     display: flex;
-    align-self: flex-start;
+    width: 320px;
     padding: 15px 70px 15px 70px;
     order: 6;
-    margin-top: 0;
-    margin-bottom: 60px;
+    margin: 0 0 60px 0;
     text-transform: uppercase;
+    box-sizing: border-box;
   }
 
   .form__input--textarea {
@@ -425,23 +446,49 @@
     padding: 20px 20px;
   }
 
-    .form__wrapper {
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 25px;
-
+  .form__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
   }
 
   .form__input--phone,
   .form__input--email {
+    height: 56px;
     padding-right: 58px;
+  }
+
+  .form__status {
+    display: flex;
+    text-transform: uppercase;
+    order: 15;
+  }
+
+  .form__item--showplace .form__title {
+    overflow: hidden;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .form__item--showplace .form__title:after,
+  .form__item--showplace .form__title:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1px;
+    background: #dbdbdb;
+    border: solid #ffffff;
+    border-width: 0 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form {
-    padding: 0 120px 30px 120px;
+    padding: 0 120px 20px 120px;
   }
 
   .form__item {
@@ -464,6 +511,7 @@
     &--contact {
       width: 960px;
       padding-top: 20px;
+      padding-bottom: 15px;
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -471,6 +519,8 @@
     &--showplace {
       width: 960px;
       flex-direction: column;
+      padding: 0;
+      padding-bottom: 25px;
     }
 
     &--textarea {
@@ -489,6 +539,7 @@
   }
 
   .form__button {
+    width: 470px;
     margin-bottom: 45px;
     padding: 14px 147px;
   }
@@ -505,6 +556,11 @@
 
   .form__item--name .form__input {
     width: 100%;
+
+    &--surname,
+    &--patronymic {
+      width: 311px;
+    }
   }
 
   .form__item--score .form__title {
@@ -517,6 +573,7 @@
 
   .form__item--contact .form__title {
     margin-bottom: 65px;
+    text-align: center;
   }
 
   .form__container--contact {
@@ -527,7 +584,16 @@
   }
 
   .form__container--contact .form__wrapper {
-    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child {
+      width: 400px;
+    }
+
+    &:last-child {
+      width: 480px;
+    }
   }
 
   .form__item--contact .form__label {
@@ -542,30 +608,32 @@
   }
 
   .form__input--textarea {
-    width: 920px;
+    width: 960px;
     height: 160px;
     padding: 20px 20px;
   }
 
   .form__item--contact .form__title::after,
-  .form__item--contact .form__title::before,
-  .form__item--showplace .form__title::after,
-  .form__item--showplace .form__title::before {
-    width: 280px;
+  .form__item--contact .form__title::before {
+     width: 280px;
     height: 1px;
   }
 
-  .form__item--showplace .form__title::after {
-    margin-left: 58px;
-  }
-
-  .form__item--showplace .form__title::before {
-    margin-right: 58px;
+  .form__item--textarea .form__title {
+    margin-bottom: 65px;
   }
 
   .form__item--textarea .form__title::after,
   .form__item--textarea .form__title::before {
-    display: none;
+    width: 280px;
+  }
+
+  .form__item--textarea .form__title::after {
+    margin-left: 73px;
+  }
+
+  .form__item--textarea .form__title::before {
+    margin-right: 73px;
   }
 
   .form__label--visually-hidden {
@@ -575,10 +643,5 @@
   .form__input--phone,
   .form__input--email {
     width: 312px;
-  }
-
-  .form__icon--phone {
-    bottom: 0;
-    right: 88px;
   }
 }

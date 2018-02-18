@@ -1,0 +1,36 @@
+.modal-failure {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 25;
+  margin-top: -183px;
+  margin-left: -200px;
+  width: 280px;
+  padding: 60px;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-failure--close {
+  display: none;
+}
+
+.modal-failure__title {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.modal-failure__text {
+  margin-bottom: 37px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.modal-failure__button {
+  width: 100%;
+  padding: 17px 0;
+}

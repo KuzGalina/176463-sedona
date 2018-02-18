@@ -6,35 +6,52 @@
 }
 
 .album__header {
-  padding: 40px 20px 15px 20px;
+  width: 100%;
+  padding: 40px 20px 25px 20px;
+  box-sizing: border-box;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .album__title {
   @include font-title;
   color: #000000;
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
   .album {
-    padding: 0 0 31px 0;
+    padding: 0 60px 31px 60px;
   }
 
   .album__header {
-    width: 438px;
-    padding: 70px 165px 72px 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 165px 55px 165px;
     border: none;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .album__title {
+    margin-bottom: 25px;
     font-size: 30px;
     line-height: 30px;
     font-weight: bold;
   }
+
+  .album__intro {
+    width: 440px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .album{
+    padding: 0;
+  }
+
   .album__header {
-    padding: 105px 380px 65px 380px;
+    width: 438px;
+    padding: 105px 0 55px 0;
   }
 }

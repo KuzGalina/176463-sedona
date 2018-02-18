@@ -5,6 +5,7 @@
 
 .preview__title {
   @include font-title;
+  margin-bottom: 30px;
 }
 
 .preview__description {
@@ -14,16 +15,20 @@
 
 @media (min-width: $tablet-width) {
   .preview {
-    padding: 50px 135px 35px 135px;
+    padding: 50px 135px 45px 135px;
   }
 
   .preview__title {
     @include font-title-tablet;
   }
+
+  .preview__description {
+    margin-top: 29px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .preview {
-    padding: 45px 350px 40px 350px;
+    padding: 50px 350px 45px 350px;
   }
 }

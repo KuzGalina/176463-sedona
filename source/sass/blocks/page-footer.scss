@@ -8,6 +8,7 @@
 }
 
 .page-footer__hash {
+  margin-bottom:26px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -26,6 +27,6 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 25px 42px 35px 120px;
+    padding: 25px 120px 35px 120px;
   }
 }

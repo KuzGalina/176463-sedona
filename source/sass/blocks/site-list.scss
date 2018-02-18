@@ -40,16 +40,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 280px;
+    width: 230px;
     background-color: $bg-white;
 
     &--right {
+      width: 250px;
       order: 2;
     }
   }
 
   .site-list__item {
     border: none;
+
     &:hover,
     &:focus {
       background-color: transparent;

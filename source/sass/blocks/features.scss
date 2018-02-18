@@ -10,7 +10,12 @@
 }
 
 .features-item__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
   padding: 38px 20px 20px 20px;
   background-color: $bg-blue;
   color: #ffffff;
@@ -18,6 +23,7 @@
 
 .features-item__title {
   @include font-title;
+  margin-bottom: 10px;
 }
 
 .features-item__header {
@@ -27,6 +33,10 @@
   padding: 55px 30px 45px 30px;
   color: #ffffff;
   background-color: $bg-blue;
+}
+
+.features-item__description {
+  width: 280px;
 }
 
 .features__description {
@@ -54,7 +64,7 @@
 
 @media (max-width: $mobile-width-only) {
   .features-item__card--triangle {
-    padding: 68px 20px 25px 20px;
+    padding: 78px 20px 25px 20px;
 
     &::before {
       position: absolute;
@@ -80,8 +90,9 @@
   }
 
   .features-item__card {
-    width: 216px;
-    padding-top: 45px;
+    width: 400px;
+    padding: 45px 0 10px 0;
+    box-sizing: border-box;
   }
 
   .features-item__header {
@@ -92,13 +103,18 @@
 
   .features-item__title {
     @include font-title-tablet;
-    margin-bottom: 15px;
+    margin-bottom: 11px;
+    width: 151px;
   }
 
   .features__image-wrapper {
     width: 512px;
     height: 256px;
     flex-grow: 3;
+  }
+
+  .features-item__description {
+    width: 170px;
   }
 
   .features__image {
@@ -115,12 +131,13 @@
   }
 
   .features-item__card {
-    padding: 45px 95px 29px 95px;
-    width: 210px;
+    padding: 50px 0 29px 0;
+    width: 400px;
+    box-sizing: border-box;
   }
 
   .features__image-wrapper {
-    width: 800px;
+    width: 256px;
     height: 256px;
     flex-grow: 3;
   }
@@ -128,5 +145,14 @@
   .features__image {
     width: 800px;
     height: 256px;
+  }
+
+  .features-item__title {
+    width: 151px;
+  }
+
+  .features-item__description {
+    width: 280px;
+    margin-top: 20px;
   }
 }
