@@ -100,8 +100,20 @@
     height: 400px;
   }
 
+  .item--big .item__icon-like {
+    width: 22px;
+    height: 22px;
+    top: -5px;
+    left: 10px;
+    fill: #b2b2b2;
+  }
+
   .item__icon-like {
-    fill: #000000;
+    width: 22px;
+    height: 22px;
+    top: -5px;
+    left: 0px;
+    fill: #b2b2b2;
   }
 }
 

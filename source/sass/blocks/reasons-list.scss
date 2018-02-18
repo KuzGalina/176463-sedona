@@ -2,11 +2,14 @@
   @include reset-list;
   display: flex;
   flex-direction: column;
-  padding: 35px 0 25px 0;
+  padding: 30px 0 25px 0;
   background-color: #ffffff;
 }
 
 .reasons-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   position: relative;
   padding: 5px 40px 15px 70px;
   text-align: left;
@@ -16,7 +19,7 @@
   content: "";
   position: absolute;
   top: -5px;
-  left: 25px;
+  left: 20px;
   z-index: 2;
   width: 37px;
   height: 37px;
@@ -27,6 +30,7 @@
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 5px;
+  width: 220px;
 }
 
 .reasons-list__title {
@@ -45,6 +49,7 @@
     padding: 160px 45px 60px 45px;
     flex-grow: 1;
     text-align: center;
+    align-items: center;
 
     &::after {
       top: 60px;
@@ -81,8 +86,9 @@
 
 @media (min-width: $desktop-width) {
   .reasons-list__item {
-    width: 260px;
-    padding: 160px 70px 75px 70px;
+    width: 400px;
+    padding: 160px 0 75px 0;
+    box-sizing: border-box;
   }
 
   .reasons-list__item::after {
@@ -93,5 +99,17 @@
     z-index: 2;
     width: 82px;
     height: 76px;
+  }
+
+  .reasons-list__title {
+    margin-bottom: 5px;
+  }
+
+  .reasons-list__description {
+    width: 300px;
+  }
+
+  .reasons-list__item--gift .reasons-list__description {
+    width: 225px;
   }
 }

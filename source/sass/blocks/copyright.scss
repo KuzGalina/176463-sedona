@@ -4,6 +4,8 @@
 }
 
 .copyright__text {
+  display: flex;
+  align-items: center;
   margin: 0;
   margin-right: 10px;
   color: #000000;
@@ -23,13 +25,5 @@
 
   &:active {
     fill: #b2b2b2;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .copyright {
-    width: 217px;
-    display: flex;
-    justify-content: flex-end;
   }
 }

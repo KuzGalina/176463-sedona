@@ -13,20 +13,12 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-
 var popup = document.querySelector(".modal-sucsess");
-var close = popup.querySelector(".modal-sucsess__button");
 
-close.addEventListener("click", function(evt) {
-evt.preventDefault();
-popup.classList.add("modal-sucsess--close");
-});
-
-
-var modal = document.querySelector(".modal-failure");
-var exit = modal.querySelector(".modal-failure__button");
-
-exit.addEventListener("click", function(evt) {
-evt.preventDefault();
-modal.classList.add("modal-failure--close");
-});
+if (popup) {
+  var close = popup.querySelector(".modal-sucsess__button");
+  close.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-sucsess--close");
+  });
+}

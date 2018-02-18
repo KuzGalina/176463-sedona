@@ -1,9 +1,13 @@
 .video-album {
-  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 90px;
   text-align: center;
 }
 
 .video-album__header {
+  width: 280px;
   padding: 35px 0 25px 0;
 }
 
@@ -14,11 +18,13 @@
 
 @media (min-width: $tablet-width) {
   .video-album {
-    padding-bottom: 120px;
+    padding-bottom: 130px;
   }
 
   .video-album__header {
-    padding: 28px 170px 75px 170px;
+    width: 450px;
+    padding: 35px 0 65px 0;
+    box-sizing: border-box;
   }
 
   .video-album__title {
@@ -34,6 +40,7 @@
   }
 
   .video-album__header {
-    padding: 75px 385px 60px 385px;
+    padding: 65px 0 60px 0;
+    box-sizing: border-box;
   }
 }
