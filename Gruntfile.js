@@ -90,13 +90,13 @@ module.exports = function(grunt) {
           expand: true,
           src: ["source/img/**/*.{png,jpg,svg}"]
         }]
-        }
-      },
+      }
+    },
 
     cwebp: {
       images: {
         options: {
-          q: 80
+          q: 90
         },
         files: [{
           expand: true,

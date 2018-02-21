@@ -7,14 +7,37 @@
   box-sizing: border-box;
 }
 
+.description__right {
+  padding-top: 0;
+}
+
 @media (min-width: $tablet-width) {
   .description {
     position: relative;
     flex-direction: row;
     justify-content: space-between;
-    padding: 15px 25px 15px 25px;
+    margin-top: 0;
+    padding: 15px 35px 15px 20px;
     background-color: #f2f2f2;
     align-items: center;
+  }
+
+  .item--big .description {
+    padding: 15px 20px 15px 20px;
+  }
+
+
+  .description__left {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .description__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
   }
 
   .description__item {

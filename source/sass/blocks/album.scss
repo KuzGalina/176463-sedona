@@ -7,7 +7,7 @@
 
 .album__header {
   width: 100%;
-  padding: 40px 20px 25px 20px;
+  padding: 35px 23px 10px 23px;
   box-sizing: border-box;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -15,7 +15,12 @@
 .album__title {
   @include font-title;
   color: #000000;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
+}
+
+.album__intro {
+  font-size: 14px;
+  line-height: 24px;
 }
 
 @media (min-width: $tablet-width) {
@@ -27,14 +32,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 70px 165px 55px 165px;
+    padding: 75px 165px 55px 165px;
     border: none;
     width: 100%;
     box-sizing: border-box;
   }
 
   .album__title {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-size: 30px;
     line-height: 30px;
     font-weight: bold;
@@ -46,12 +51,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .album{
+  .album {
     padding: 0;
   }
 
   .album__header {
     width: 438px;
-    padding: 105px 0 55px 0;
+    padding: 105px 0 60px 0;
   }
 }

@@ -7,8 +7,7 @@
   padding-bottom: 25px;
   width: 280px;
   height: 112px;
-  margin: -46px auto;
-  background-color: #f2f2f2;
+  margin: -50px auto;
   box-sizing: border-box;
 }
 
@@ -47,7 +46,7 @@
 .player-container {
   display: flex;
   justify-content: space-between;
-  width: 86px;
+  width: 85px;
   margin-right: 25px;
   order: 3;
 }
@@ -88,8 +87,8 @@
 }
 
 .player__fullscreen {
-  width: 22px;
-  height: 22px;
+  width: 21px;
+  height: 21px;
   fill: #5c6870;
   cursor: pointer;
 
@@ -108,10 +107,11 @@
     position: relative;
     bottom: 0;
     width: 648px;
-    height: 94px;
-    margin: -93px auto;
+    height: 96px;
+    margin: -96px auto;
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 0 35px;
+    padding: 0 40px 0 35px;
+    box-sizing: border-box;
     z-index: 3;
   }
 
@@ -130,6 +130,10 @@
 
   .player__scroll::before {
     width: 394px;
+  }
+
+  .player__scroll::after {
+    left: 115px;
   }
 
   .player-container {

@@ -2,7 +2,7 @@
   @include reset-list;
   display: flex;
   flex-direction: column;
-  padding: 30px 0 25px 0;
+  padding: 30px 0 10px 0;
   background-color: #ffffff;
 }
 
@@ -11,8 +11,13 @@
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  padding: 5px 40px 15px 70px;
+  padding: 5px 40px 10px 70px;
   text-align: left;
+
+  &--food {
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
 }
 
 .reasons-list__icon {
@@ -24,18 +29,26 @@
   width: 37px;
   height: 37px;
   fill: #a1c6dd;
+
+  &--food {
+    top: -3px;
+  }
 }
 
 .reasons-list__description {
   font-size: 14px;
   line-height: 21px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   width: 220px;
 }
 
 .reasons-list__title {
   @include font-title;
   color: #000000;
+}
+
+.reasons-list__description br {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,7 +59,7 @@
 
   .reasons-list__item {
     width: 158px;
-    padding: 160px 45px 60px 45px;
+    padding: 160px 45px 47px 45px;
     flex-grow: 1;
     text-align: center;
     align-items: center;
@@ -64,6 +77,15 @@
     &--gift {
       order: 3;
     }
+  }
+
+  .reasons-list__description {
+    margin-top: 16px;
+    width: 158px;
+  }
+
+  .reasons-list__item--gift .reasons-list__description {
+    width: 165px;
   }
 
   .reasons-list__title {
@@ -87,7 +109,7 @@
 @media (min-width: $desktop-width) {
   .reasons-list__item {
     width: 400px;
-    padding: 160px 0 75px 0;
+    padding: 160px 0 62px 0;
     box-sizing: border-box;
   }
 
@@ -110,6 +132,10 @@
   }
 
   .reasons-list__item--gift .reasons-list__description {
-    width: 225px;
+    width: 220px;
+  }
+
+  .reasons-list__description br {
+    display: block;
   }
 }

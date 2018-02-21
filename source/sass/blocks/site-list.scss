@@ -40,11 +40,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 230px;
+    width: 231px;
     background-color: $bg-white;
 
     &--right {
-      width: 250px;
+      width: 254px;
+      margin-left: 207px;
       order: 2;
     }
   }
@@ -96,6 +97,10 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 320px;
+    width: 317px;
+
+    &--right {
+      width: 342px;
+    }
   }
 }

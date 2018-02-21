@@ -25,7 +25,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 700px;
+    box-sizing: border-box;
+    padding: 0 26px 0 49px;
   }
 
   .main-nav__toggle {
@@ -35,7 +36,8 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 1050px;
+    padding-left: 92px;
+    padding-right: 70px;
   }
 }
 

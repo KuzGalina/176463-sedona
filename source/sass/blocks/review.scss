@@ -1,15 +1,17 @@
 .review__header {
-  padding: 35px 20px 30px 20px;
+  padding: 35px 20px 18px 20px;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .review__title {
   @include font-title;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
 }
 
 .review__intro {
+  font-size: 14px;
+  line-height: 24px;
   margin: 0;
 }
 
@@ -22,6 +24,10 @@
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 30px;
+  }
+
+  .review__intro {
+    width: 446px;
   }
 }
 

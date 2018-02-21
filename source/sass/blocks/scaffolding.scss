@@ -2,6 +2,7 @@
   font-weight: normal;
   font-family: "PT Sans";
   font-style: normal;
+  font-display: swap;
   src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
 }
 
@@ -9,6 +10,7 @@
   font-weight: bold;
   font-family: "PT Sans";
   font-style: normal;
+  font-display: swap;
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
 }
 
@@ -31,13 +33,6 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-input,
-textarea,
-select,
-button {
-  font-family: "PT Sans", "Arial", sans-serif;
-}
-
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
@@ -55,6 +50,7 @@ button {
 }
 
 .button-page {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;

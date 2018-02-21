@@ -5,7 +5,7 @@
   align-items: flex-start;
   width: 100%;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 24px 20px 18px 20px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -48,7 +48,7 @@
   position: relative;
   display: flex;
   font-weight: bold;
-  padding-left: 37px;
+  padding-left: 36px;
   margin-top: 8px;
   margin-bottom: 0;
 }
@@ -56,10 +56,10 @@
 .item__icon-like {
   position: absolute;
   content: "";
-  top: 0;
+  top: -2px;
   left: 0;
-  width: 27px;
-  height: 23px;
+  width: 22px;
+  height: 22px;
   fill: #b2b2b2;
 }
 
@@ -103,16 +103,24 @@
   .item--big .item__icon-like {
     width: 22px;
     height: 22px;
-    top: -5px;
-    left: 10px;
+    top: -6px;
+    left: 5px;
     fill: #b2b2b2;
+  }
+
+  .item__likes {
+    width: 19px;
+  }
+
+  .item--big .item__likes {
+    width: 35px;
   }
 
   .item__icon-like {
     width: 22px;
     height: 22px;
-    top: -5px;
-    left: 0px;
+    top: -4px;
+    left: 1px;
     fill: #b2b2b2;
   }
 }
@@ -155,5 +163,9 @@
 
   .item__name {
     color: #ffffff;
+  }
+
+  .item__author {
+    margin-bottom: 3px;
   }
 }

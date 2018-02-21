@@ -7,13 +7,22 @@
 }
 
 .video-album__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 280px;
-  padding: 35px 0 25px 0;
+  padding: 35px 0 20px 0;
 }
 
 .video-album__title {
   @include font-title;
-  margin-bottom: 30px;
+  margin-bottom: 13px;
+}
+
+.video-album__intro {
+  font-size: 14px;
+  line-height: 24px;
+  width: 277px;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,7 +32,7 @@
 
   .video-album__header {
     width: 450px;
-    padding: 35px 0 65px 0;
+    padding: 35px 0 62px 0;
     box-sizing: border-box;
   }
 
@@ -31,6 +40,11 @@
     font-size: 30px;
     line-height: 30px;
     font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .video-album__intro {
+    width: 416px;
   }
 }
 
