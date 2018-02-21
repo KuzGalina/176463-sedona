@@ -73,6 +73,7 @@
   height: 55px;
   margin-bottom: 15px;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .form__label {
@@ -141,7 +142,14 @@
 }
 
 .form__input--radio {
-  display: none;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .form__input--radio + .form__label {
@@ -176,7 +184,19 @@
 }
 
 .form__input--checkbox {
-  display: none;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.form__input--radio:focus + .form__label::before,
+.form__input--checkbox:focus + .form__label::before {
+  box-shadow: 0 0 1px 2px #b2d5ea;
 }
 
 .form__input--checkbox + .form__label {
@@ -706,7 +726,7 @@
     width: 312px;
   }
 
-  .form__label--hidden {
+  .form__label-hidden {
     display: none;
   }
 }

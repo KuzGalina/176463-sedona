@@ -1,4 +1,4 @@
-.player {
+.video-player {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,9 +9,11 @@
   height: 112px;
   margin: -50px auto;
   box-sizing: border-box;
+  background-size: cover;
+  background-color: rgba(89, 87, 83, 0.1);
 }
 
-.player__scroll {
+.video-player__scroll {
   position: relative;
   background-color: rgba(0, 0, 0, 0.4);
   width: 280px;
@@ -20,7 +22,7 @@
   order: 1;
 }
 
-.player__scroll::before {
+.video-player__scroll::before {
   position: absolute;
   content: "";
   width: 236px;
@@ -31,7 +33,7 @@
   cursor: pointer;
 }
 
-.player__scroll::after {
+.video-player__scroll::after {
   position: absolute;
   content: "";
   width: 10px;
@@ -43,7 +45,7 @@
   cursor: pointer;
 }
 
-.player-container {
+.video-player-container {
   display: flex;
   justify-content: space-between;
   width: 85px;
@@ -51,7 +53,7 @@
   order: 3;
 }
 
-.player__replay {
+.video-player__replay {
   display: flex;
   width: 17px;
   height: 21px;
@@ -70,7 +72,7 @@
   }
 }
 
-.player__subtitles {
+.video-player__subtitles {
   width: 34px;
   height: 22px;
   fill: #5c6870;
@@ -86,7 +88,7 @@
   }
 }
 
-.player__fullscreen {
+.video-player__fullscreen {
   width: 21px;
   height: 21px;
   fill: #5c6870;
@@ -103,7 +105,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .player {
+  .video-player {
     position: relative;
     bottom: 0;
     width: 648px;
@@ -115,39 +117,39 @@
     z-index: 3;
   }
 
-  .player__replay {
+  .video-player__replay {
     fill: #ffffff;
     margin: 0;
     order: 1;
   }
 
-  .player__scroll {
+  .video-player__scroll {
     width: 394px;
     margin: 0;
     background-color: transparent;
     order: 2;
   }
 
-  .player__scroll::before {
+  .video-player__scroll::before {
     width: 394px;
   }
 
-  .player__scroll::after {
+  .video-player__scroll::after {
     left: 115px;
   }
 
-  .player-container {
+  .video-player-container {
     margin: 0;
     order: 3;
   }
 
-  .player__fullscreen {
+  .video-player__fullscreen {
     top: 34px;
     right: 40px;
     fill: #ffffff;
   }
 
-  .player__subtitles {
+  .video-player__subtitles {
     fill: #ffffff;
     top: 34px;
     left: 520px;
@@ -155,15 +157,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .player {
+  .video-player {
     width: 800px;
   }
 
-  .player__scroll {
+  .video-player__scroll {
     width: 540px;
   }
 
-  .player__scroll::before {
+  .video-player__scroll::before {
     width: 540px;
   }
 }

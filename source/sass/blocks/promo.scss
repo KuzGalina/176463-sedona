@@ -12,7 +12,7 @@
 .promo--small {
   position: relative;
   min-height: 158px;
-  background-position: center -95px;
+  background-position: center -232px;
 }
 
 .promo::before,
@@ -62,6 +62,7 @@
   .promo--small {
     min-height: 290px;
     background-size: cover;
+    background-position: center -225px;
   }
 
   .promo::before,
@@ -101,6 +102,7 @@
 
   .promo--small {
     min-height: 305px;
+    background-position: center -220px;
   }
 
   .promo::before,

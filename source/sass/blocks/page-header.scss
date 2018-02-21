@@ -24,7 +24,8 @@
 }
 
 .page-header__clouds,
-.page-header__blue-space {
+.page-header__blue-space,
+.page-header__bridge {
   display: none;
 }
 
@@ -62,7 +63,8 @@
     height: 98px;
   }
 
-  .page-header__blue-space {
+  .page-header__blue-space,
+  .page-header__bridge {
     display: inline-block;
   }
 }
